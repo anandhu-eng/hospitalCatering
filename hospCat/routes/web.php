@@ -41,3 +41,6 @@ Route::get('/patientProfile', function () {
 
 // To check whether the number exist in the database
 Route::post('/loginPhCheck', [loginController::class, 'checkNo']);
+
+// Function to add the items to cart.
+Route::post('/addCart',[addCartController::class, 'cartJsonRequest']);
