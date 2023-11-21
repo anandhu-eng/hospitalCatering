@@ -280,10 +280,17 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
+  @font-face {
+  font-family: 'Poppins-Regular';
+  src: url('./fonts/Poppins/Poppins-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+  }
     /* Style the form */
     .example {
       position: absolute;
       left: 200px;
+      font-family:"Poppins-Regular";
       top: 150px;
       display: flex;
       align-items: center;
@@ -293,12 +300,14 @@
     .example input[type="text"] {
      width: 1000px;
      border: 2px solid #ccc;
-      padding: 20px;
+     font-family:"Poppins-Regular";
+     padding: 20px;
+     border-radius: 5px 0 0 5px;
     }
 
     /* Style the search button */
     .example button {
-      padding: 20px;
+      padding: 22px;
       background: #111796;
       color: white;
       border: none;
@@ -343,10 +352,10 @@
                     </div>
                   </div>
                   <select id="profile" name="profile" class="desktop27-text08" >
-        <option value="Profile">Profile</option>
-        <option value="Myorders">My Orders</option>
-        <option value="Logout">Logout</option>
-    </select>
+                    <option value="Profile">Profile</option>
+                    <option value="Myorders">My Orders</option>
+                    <option value="Logout">Logout</option>
+                  </select>
                 </div>
                 <span class="desktop27-text10"><span>Cart</span></span>
                 <span class="desktop27-text12"><span>Home</span></span>
@@ -355,11 +364,11 @@
             </div>
           </div>
           <form class="example" action="action_page.php">
-    <input type="text" placeholder="Search for your favourite dish " name="search" > <p>&nbsp</p>
-    <button type="submit"><i class="fa fa-search"></i></button>
-  </form>
+            <input type="text" placeholder="Search for your favourite dish " name="search" > <p>&nbsp</p>
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
           <div class="desktop27-group821">
-            <span class="desktop27-text16"><span>Popular Dishes</span></span>
+            <span class="desktop27-text16"><span>Menu</span></span>
             <div class="desktop27-group17">
               <img
                 src="<?php echo asset('homepg/images/')?>/food.png"
@@ -380,56 +389,6 @@
                   class="desktop27-vector05"
                 />
                 <span class="desktop27-text22"><span>4.3</span></span>
-              </div>
-            </div>
-          </div>
-          <div class="desktop27-group83">
-            <span class="desktop27-text42"><span>Popular Dishes</span></span>
-            <div class="desktop27-group171">
-              <img
-                src="<?php echo asset('homepg/images/')?>/food.png"
-                alt="anhnguyenkcAc3f3FEunsplashremovebgpreview11551"
-                class="desktop27-anhnguyenkc-ac3f3f-eunsplashremovebgpreview104"
-              />
-              <span class="desktop27-text44"><span>Ceasar Salad</span></span>
-              <span class="desktop27-text46"><span>Rs. 60</span></span>
-              <img
-                src="<?php echo asset('homepg/external/')?>/vector1551-ri7.svg"
-                alt="Vector1551"
-                class="desktop27-vector12"
-              />
-              <div class="desktop27-group1504">
-                <img
-                  src="<?php echo asset('homepg/external/')?>/vector1551-cuvd.svg"
-                  alt="Vector1551"
-                  class="desktop27-vector13"
-                />
-                <span class="desktop27-text48"><span>4.3</span></span>
-              </div>
-            </div>
-          </div>
-          <div class="desktop27-group84">
-            <span class="desktop27-text68"><span>Popular Dishes</span></span>
-            <div class="desktop27-group172">
-              <img
-                src="<?php echo asset('homepg/images/')?>/food.png"
-                alt="anhnguyenkcAc3f3FEunsplashremovebgpreview11551"
-                class="desktop27-anhnguyenkc-ac3f3f-eunsplashremovebgpreview108"
-              />
-              <span class="desktop27-text70"><span>Ceasar Salad</span></span>
-              <span class="desktop27-text72"><span>Rs. 60</span></span>
-              <img
-                src="<?php echo asset('homepg/external/')?>/vector1551-qz0c.svg"
-                alt="Vector1551"
-                class="desktop27-vector20"
-              />
-              <div class="desktop27-group1508">
-                <img
-                  src="<?php echo asset('homepg/external/')?>/vector1551-ox4.svg"
-                  alt="Vector1551"
-                  class="desktop27-vector21"
-                />
-                <span class="desktop27-text74"><span>4.3</span></span>
               </div>
             </div>
           </div>

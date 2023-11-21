@@ -147,7 +147,7 @@
 }
 .desktop27-iconamoonprofilecircle {
   top: 0px;
-  left: 0px;
+  left: 35px;
   width: 39px;
   height: 39px;
   display: flex;
@@ -158,7 +158,7 @@
 }
 .desktop27-group {
   top: 4.878390789031982px;
-  left: 4.874998092651367px;
+  left: 8px;
   width: 29.25002098083496px;
   height: 30.87161636352539px;
   display: flex;
@@ -182,7 +182,7 @@
 }
 .desktop27-text08 {
   top: 6px;
-  left: 44px;
+  left: 78px;
   color: rgba(0, 0, 0, 1);
   height: auto;
   position: absolute;
@@ -197,7 +197,7 @@
 }
 .desktop27-text10 {
   top: 6px;
-  left: 106px;
+  left: 150px;
   color: rgba(0, 0, 0, 1);
   height: auto;
   position: absolute;
@@ -212,6 +212,7 @@
 }
 .desktop27-text12 {
   top: 6px;
+  left: 50px;
   color: rgba(0, 0, 0, 1);
   height: auto;
   position: absolute;
@@ -374,6 +375,7 @@
   font-stretch: normal;
   text-decoration: none;
 }
+
 .desktop27-group18 {
   top: 105px;
   left: 390px;
