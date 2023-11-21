@@ -27,7 +27,7 @@
 }
 .desktop27-desktop27 {
   width: 100%;
-  height: 1995px;
+  height: 980px;
   display: flex;
   overflow: hidden;
   position: relative;
@@ -345,7 +345,7 @@
   position: absolute;
 }
 .desktop27-group15 {
-  top: 234px;
+  top: 219px;
   left: 177px;
   width: 43px;
   height: 26px;
@@ -376,6 +376,18 @@
   text-decoration: none;
 }
 
+.addtocart{
+    margin-top:22px;
+    margin-left:15px;
+    top:28px;
+    bottom:0px;
+    padding: 8px;
+    background: #111796;
+    color: white;
+    border: none;
+    border-radius: 4px 4px 4px 4px;
+    cursor: pointer;
+}
 .desktop27-group18 {
   top: 105px;
   left: 390px;
