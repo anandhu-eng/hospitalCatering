@@ -85,13 +85,14 @@
   position: absolute;
   width: 53px;
   top: 5px;
-  left: 28px;
+  left: 22px;
   font-family: "Poppins-Regular";
   font-weight: 400;
   color: #ffffff;
   font-size: 18px;
   letter-spacing: 0;
   line-height: normal;
+  cursor: pointer;
 }
 .desktop1-text06 {
   position: absolute;

@@ -107,7 +107,9 @@
         <div class="desktop1-desktop1">
           <div class="desktop1-group4">
             <div class="desktop1-group1">
-              <a href="https://www.google.com/" class="desktop1-text04">Login</a>
+              <form method="GET" action="/login">
+                <button class="desktop1-text04">Login</button>
+              </form>
             </div>
           </div>
           <span class="desktop1-text06"><span>Medimenu</span></span>

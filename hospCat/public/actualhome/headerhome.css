@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'Jim Nightshade-Regular';
+    src: url('./fonts/Jim_Nightshade/JimNightshade-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('./fonts/Poppins/Poppins-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'Poppins-Semibold';
+    src: url('./fonts/Poppins/Poppins-SemiBold.ttf');
+    font-weight: 400;
+    font-style: normal;
+  }
+.box {
+    position: relative;
+    width: 1377px;
+    height: 64px;
+  }
+  
+  .box .group {
+    position: fixed;
+    width: 1379px;
+    height: 64px;
+    top: 10px;
+    left: 0;
+  }
+  
+  .box .text-wrapper {
+    position: absolute;
+    width: 195px;
+    top: 10px;
+    left: 30px;
+    font-family: "Jim Nightshade-Regular";
+    font-weight: 400;
+    color: #111696;
+    font-size: 45px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .box .div {
+    position: absolute;
+    width: 304px;
+    height: 39px;
+    top: 13px;
+    left: 1190px;
+  }
+  
+  .box .group-2 {
+    position: absolute;
+    width: 295px;
+    height: 39px;
+    top: 0;
+    left: 0;
+  }
+  
+  .box .group-3 {
+    position: absolute;
+    width: 107px;
+    height: 39px;
+    top: 0;
+    left: 186px;
+  }
+  
+  .box .iconamoon-profile {
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    top: 4px;
+    left: 0;
+  }
+  
+  .box .text-wrapper-2 {
+    position: absolute;
+    top: 10px;
+    left: 44px;
+    font-family: "Poppins-Regular";
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .box .text-wrapper-3 {
+    position: absolute;
+    top: 10px;
+    left: 106px;
+    font-family: "Poppins-Regular";
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .box .text-wrapper-4 {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-family: "Poppins-Semibold";
+    font-weight: 500;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .box .vector {
+    position: absolute;
+    width: 7px;
+    height: 5px;
+    top: 22px;
+    left: 297px;
+  }
+  

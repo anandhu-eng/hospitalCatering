@@ -10,7 +10,7 @@
       html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
 
 .form-group {
-            margin-bottom: 20px;
+            margin-bottom:20px;
         }
 
         .form-group label {
@@ -30,7 +30,7 @@
         }
 
         .btn-container button {
-            background-color: #3498db; /* Blue button color */
+            background-color: #111696; /* Blue button color */
             color: #ffffff; /* White button text color */
             padding: 10px 20px;
             border: none;
@@ -160,7 +160,7 @@
   <body>
     <link rel="stylesheet" href="./style.css" />
     <div>
-      <link href="<?php echo asset('loginPg/css/index.css')?>" rel="stylesheet" />
+      <link href="<?php echo asset('loginPg/css/style.css')?>" rel="stylesheet" />
 
       <div class="desktop1-container">
         <div class="desktop1-desktop1">
@@ -180,28 +180,21 @@
               </span>
             </span>
           </div>
-          <span class="desktop1-text06"><span>Verify OTP</span></span>
+          <span class="desktop1-text66"><span>Verify OTP</span></span>
          
           
-<div class="desktop1-text10">
-            <span>Enter the OTP</span>
-          <form>
+         <div class="desktop1-text99">
+            <span class="no">Enter the OTP</span>
+          <form method="post" action="/home">
+          @csrf
             <div class="form-group">
                 <label for="phone">  </label>
-                <input type="text" id="phone" name="phone" placeholder="               ****" required>
+                <input type="text" id="phone" name="phone" placeholder=" " required>
             </div>
             <div class="btn-container">
-                <button type="button">Verify OTP</button>
+                <button type="submit" value="Submit">Verify OTP</button>
             </div>
-        </form>
-        
-            
-          
-          
-            
-          
-          
-          
+          </form>
         </div>
       </div>
     </div>

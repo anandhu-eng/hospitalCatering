@@ -111,6 +111,20 @@
   font-stretch: normal;
   text-decoration: none;
 }
+.desktop1-text66 {
+  top: 125px;
+  left: 950px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  font-size: 35px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Salsa;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
 .desktop1-text08 {
   top: 175px;
   left: 945px;
@@ -130,6 +144,20 @@
 .desktop1-text10 {
   top: 275px;
   left: 885px;
+  color: rgba(0, 0, 0, 0.6600000262260437);
+  width: 337px;
+  height: auto;
+  position: absolute;
+  font-family: "Poppins-Regular";
+  text-align: justify;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.desktop1-text99 {
+  top: 275px;
+  left: 875px;
   color: rgba(0, 0, 0, 0.6600000262260437);
   width: 337px;
   height: auto;
@@ -369,4 +397,5 @@
   font-size: 14px;
   font-family:"Poppins-Regular" ;
   top:25px;
+  padding:8px;
 }

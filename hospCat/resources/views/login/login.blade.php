@@ -28,7 +28,7 @@
         .btn-container {
             cursor: pointer;
             text-align: center;
-            background-color: #3498db;
+            background-color: #111696;
             color: #ffffff;
             border: none;
             cursor: pointer;
@@ -38,7 +38,7 @@
         .btn-container button {
             cursor: pointer;
             text-align: center;
-            background-color: #3498db;
+            background-color: #111696;
             color: #ffffff;
             padding: 10px 20px;
             border: none;
@@ -186,7 +186,7 @@
           @csrf
             <div class="form-group">
                 <label for="phone">  </label>
-                <input type="text" id="phone" name="phone" placeholder="eg:9495920102" required>
+                <input type="text" id="phone" name="phone" placeholder="eg: 9495920102" required>
             </div>
             <div class="btn-container">
                 <button value="Submit" type="submit">Receive OTP</button>
