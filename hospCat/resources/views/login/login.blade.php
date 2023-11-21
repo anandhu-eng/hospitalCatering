@@ -182,7 +182,7 @@
           <span class="desktop1-text08"><span>Enter your details</span></span>
         <div class="desktop1-text10">
             <span class="no">Enter your Phone no</span>
-          <form method="post" action="/verify">
+          <form method="post" action="/loginPhCheck">
           @csrf
             <div class="form-group">
                 <label for="phone">  </label>
