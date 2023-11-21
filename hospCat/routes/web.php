@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\loginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,7 +18,7 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::post('/home', function () {
+Route::get('/home', function () {
     return view('home');
 });
 
@@ -36,3 +37,7 @@ Route::get('/cart', function () {
 Route::get('/patientProfile', function () {
     return view('patientProfile');
 });
+
+
+// To check whether the number exist in the database
+Route::post('/loginPhCheck', [loginController::class, 'checkNo']);
