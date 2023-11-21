@@ -21,6 +21,14 @@ Route::get('/home', function () {
     return view('home');
 });
 
+Route::get('/login', function () {
+    return view('login.login');
+});
+
+Route::post('/verify', function () {
+    return view('login.verify');
+});
+
 Route::get('/cart', function () {
     return view('cart');
 });

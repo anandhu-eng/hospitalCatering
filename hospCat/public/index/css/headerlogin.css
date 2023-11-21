@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'Jim Nightshade-Regular';
+    src: url('./fonts/Jim_Nightshade/JimNightshade-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('./fonts/Poppins/Poppins-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'Poppins-Semibold';
+    src: url('./fonts/Poppins/Poppins-SemiBold.ttf');
+    font-weight: 400;
+    font-style: normal;
+  }
+.box {
+    position: relative;
+    width: 1380px;
+    height: 64px;
+  }
+  
+  .box .group {
+    position: fixed;
+    width: 1382px;
+    height: 64px;
+    top: 10px;
+    left: 0;
+  }
+  
+  .box .div {
+    position: absolute;
+    width: 315px;
+    height: 39px;
+    top: 13px;
+    left: 1180px;
+  }
+  
+  .box .text-wrapper {
+    position: absolute;
+    top: 10px;
+    left: 106px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .box .text-wrapper-2 {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-family: "Poppins-SemiBold";
+    font-weight: 600;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .box .overlap-group-wrapper {
+    position: absolute;
+    width: 102px;
+    height: 39px;
+    left: 211px;
+  }
+  
+  .box .overlap-group {
+    position: relative;
+    width: 100px;
+    top: 5px;
+    height: 39px;
+    background-color: #111696;
+    border-radius: 15px;
+  }
+  
+  .box .text-wrapper-3 {
+    position: absolute;
+    width: 53px;
+    top: 4px;
+    left: 23px;
+    font-family: "Poppins-Regular";
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .box .text-wrapper-4 {
+    position: absolute;
+    width: 195px;
+    top: 10px;
+    left: 30px;
+    font-family: "Jim Nightshade-Regular";
+    font-weight: 400;
+    color: #111696;
+    font-size: 45px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  

@@ -1,0 +1,372 @@
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url('./fonts/Poppins/Poppins-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+.desktop1-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  align-items: center;
+  flex-direction: column;
+}
+.desktop1-desktop1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: rgba(255, 255, 255, 1);
+}
+.desktop1-rectangle9 {
+  top: 0px;
+  left: 0px;
+  width: 563px;
+  height: 100%;
+  position: static;
+}
+.desktop1-group13 {
+  top: 225px;
+  left: 83px;
+  width: 396px;
+  height: 267px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.desktop1-group11 {
+  top: 0px;
+  left: 88px;
+  width: 199px;
+  height: 129.8095245361328px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.desktop1-text {
+  top: 60px;
+  left: 16px;
+  color: rgba(255, 255, 255, 1);
+  width: 167px;
+  height: auto;
+  position: absolute;
+  font-size: 50px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Jim Nightshade;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.desktop1-text02 {
+  color: rgba(255, 255, 255, 1);
+  width: 199px;
+  top:0 px;
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Faustina;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.desktop1-text04 {
+  top: 183px;
+  color: rgba(255, 255, 255, 1);
+  left: 50px;
+  text-align:justify;
+  width: 396px;
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.desktop1-text06 {
+  top: 125px;
+  left: 1000px;
+  color: rgba(0, 0, 0, 1);
+  width: 163px;
+  position: absolute;
+  font-size: 35px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Salsa;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.desktop1-text08 {
+  top: 175px;
+  left: 945px;
+  color: rgba(148, 147, 147, 1);
+  width: 395px;
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.desktop1-text10 {
+  top: 275px;
+  left: 885px;
+  color: rgba(0, 0, 0, 0.6600000262260437);
+  width: 337px;
+  height: auto;
+  position: absolute;
+  font-family: "Poppins-Regular";
+  text-align: justify;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.no {
+  font-family: "Poppins-Regular";
+  font-size:18px;
+  left:10px;
+}
+.desktop1-rectangle10 {
+  top: 499px;
+  left: 720px;
+  width: 449px;
+  height: 73px;
+  position: absolute;
+  border-radius: 20px;
+}
+.desktop1-desktop11 {
+  top: 1263px;
+  left: 1698px;
+  width: 926px;
+  height: 525px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: rgba(255, 255, 255, 1);
+}
+.desktop1-rectangle91 {
+  top: 0px;
+  left: 0px;
+  width: 563px;
+  height: 1024px;
+  position: absolute;
+}
+.desktop1-group131 {
+  top: 369px;
+  left: 83px;
+  width: 396px;
+  height: 267px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.desktop1-group111 {
+  top: 0px;
+  left: 98px;
+  width: 199px;
+  height: 129.8095245361328px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.desktop1-text12 {
+  top: 61px;
+  left: 16px;
+  color: rgba(255, 255, 255, 1);
+  width: 167px;
+  height: auto;
+  position: absolute;
+  font-size: 50px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Jim Nightshade;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.desktop1-text14 {
+  color: rgba(255, 255, 255, 1);
+  width: 199px;
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Faustina;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.desktop1-text16 {
+  top: 183px;
+  color: rgba(255, 255, 255, 1);
+  width: 396px;
+  height: auto;
+  position: absolute;
+  font-size: 28px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.desktop1-text18 {
+  top: 195px;
+  left: 915px;
+  color: rgba(0, 0, 0, 1);
+  width: 163px;
+  height: auto;
+  position: absolute;
+  font-size: 50px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Salsa;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.desktop1-text20 {
+  top: 273px;
+  left: 880px;
+  color: rgba(148, 147, 147, 1);
+  width: 395px;
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.desktop1-text22 {
+  top: 404px;
+  left: 750px;
+  color: rgba(0, 0, 0, 0.6600000262260437);
+  width: 337px;
+  height: auto;
+  position: absolute;
+  font-size: 32px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.desktop1-rectangle101 {
+  top: 464px;
+  left: 720px;
+  width: 449px;
+  height: 73px;
+  position: absolute;
+  border-radius: 20px;
+}
+.desktop1-text24 {
+  top: 481px;
+  left: 754px;
+  color: rgba(148, 147, 147, 1);
+  width: 252px;
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.desktop1-text26 {
+  top: 646px;
+  left: 881px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 21px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.desktop1-rectangle11 {
+  top: 625px;
+  left: 822px;
+  width: 245px;
+  height: 55px;
+  position: absolute;
+  border-radius: 15px;
+}
+.desktop1-text28 {
+  top: 637px;
+  left: 878px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.desktop1-text30 {
+  top: 720px;
+  left: 750px;
+  color: rgba(148, 147, 147, 1);
+  width: 463px;
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.p {
+  text-align:center;
+  font-size: 14px;
+  font-family:"Poppins-Regular" ;
+  top:25px;
+}
