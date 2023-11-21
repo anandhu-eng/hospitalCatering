@@ -11,8 +11,8 @@ class CreatePatientDetailsTable extends Migration
         Schema::create('patient_details', function (Blueprint $table) {
             $table->id('PID');
             $table->string('PatientName');
-            $table->string('PhNo');
-            $table->text('Address');
+            $table->integer('PhNo');
+            $table->string('Address');
             // $table->timestamps();
         });
     }

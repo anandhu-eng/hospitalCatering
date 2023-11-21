@@ -369,14 +369,20 @@
           </form>
           <div class="desktop27-group821">
             <span class="desktop27-text16"><span>Menu</span></span>
+          </div>
+          @foreach ($food_records as $index => $food)
+          <div class="desktop27-group821">
+            
+            
             <div class="desktop27-group17">
+            
               <img
                 src="<?php echo asset('homepg/images/')?>/food.png"
                 alt="food pic"
                 class="desktop27-anhnguyenkc-ac3f3f-eunsplashremovebgpreview1"
               />
-              <span class="desktop27-text18"><span>Ceasar Salad</span></span>
-              <span class="desktop27-text20"><span>Rs. 60</span></span>
+              <span class="desktop27-text18"><span>{{$food->FName}}</span></span>
+              <span class="desktop27-text20"><span>{{$food->Price}}</span></span>
               <img
                 src="<?php echo asset('homepg/external/')?>/vector1559-slvw.svg"
                 alt="Vector1559"
@@ -391,9 +397,14 @@
                 <span class="desktop27-text22"><span>4.3</span></span>
                 <button class="addtocart" onclick="addtocart()">+</button>
               </div>
-
             </div>
+            
           </div>
+
+          @if (($index + 1) % 4 === 0)
+              <br>
+          @endif
+          @endforeach
         </div>
       </div>
     </div>
