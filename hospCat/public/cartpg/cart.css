@@ -1,3 +1,22 @@
+@font-face {
+    font-family: 'Jim Nightshade-Regular';
+    src: url('./fonts/Jim_Nightshade/JimNightshade-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Poppins-Regular';
+    src: url('./fonts/Poppins/Poppins-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Poppins-Semibold';
+    src: url('./fonts/Poppins/Poppins-SemiBold.ttf');
+    font-weight: 400;
+    font-style: normal;
+  }
 .desktop30-container {
   width: 100%;
   display: flex;
@@ -7,40 +26,39 @@
   flex-direction: column;
 }
 .desktop30-desktop30 {
-  width: 100%;
-  height: 980px;
-  display: flex;
-  overflow: hidden;
-  position: relative;
-  align-items: flex-start;
-  flex-shrink: 0;
-  background-color: rgba(255, 255, 255, 1);
+    top: 12px;
+    left: 24px;
+    width: 1377.180419921875px;
+    height: 64px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
 }
 .desktop30-text {
-  top: 12px;
-  left: 24px;
-  color: rgba(17, 22, 150, 1);
-  width: 195px;
-  height: auto;
-  position: absolute;
-  font-size: 45px;
-  font-style: Regular;
-  text-align: left;
-  font-family: Jim Nightshade;
-  font-weight: 400;
-  line-height: normal;
-  font-stretch: normal;
-  text-decoration: none;
+    color: rgba(17, 22, 150, 1);
+    width: 195px;
+    height: auto;
+    left:10px;
+    position: absolute;
+    font-size: 45px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Jim Nightshade;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
 }
 .desktop30-group80 {
-  top: 25px;
-  left: 1097px;
-  width: 304.18048095703125px;
-  height: 39px;
-  display: flex;
-  position: absolute;
-  align-items: flex-start;
-  flex-shrink: 1;
+    top: 13px;
+    left: 1073px;
+    width: 304.18048095703125px;
+    height: 39px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
 }
 .desktop30-group34 {
   top: 0px;
@@ -64,7 +82,7 @@
 }
 .desktop30-iconamoonprofilecircle {
   top: 0px;
-  left: 0px;
+  left: 35px;
   width: 39px;
   height: 39px;
   display: flex;
@@ -74,14 +92,14 @@
   flex-shrink: 0;
 }
 .desktop30-group {
-  top: 4.878390789031982px;
-  left: 4.874998092651367px;
-  width: 29.25002098083496px;
-  height: 30.87161636352539px;
-  display: flex;
-  position: absolute;
-  align-items: flex-start;
-  flex-shrink: 1;
+    top: 4.878390789031982px;
+    left: 8px;
+    width: 29.25002098083496px;
+    height: 30.87161636352539px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
 }
 .desktop30-vector {
   top: 0px;
@@ -99,7 +117,7 @@
 }
 .desktop30-text02 {
   top: 6px;
-  left: 44px;
+  left: 78px;
   color: rgba(0, 0, 0, 1);
   height: auto;
   position: absolute;
@@ -114,7 +132,7 @@
 }
 .desktop30-text04 {
   top: 6px;
-  left: 106px;
+  left: 150px;
   color: rgba(0, 0, 0, 1);
   height: auto;
   position: absolute;
@@ -122,13 +140,14 @@
   font-style: Medium;
   text-align: left;
   font-family: Poppins;
-  font-weight: 500;
+  font-weight: 400;
   line-height: normal;
   font-stretch: normal;
   text-decoration: none;
 }
 .desktop30-text06 {
   top: 6px;
+  left:50px;
   color: rgba(0, 0, 0, 1);
   height: auto;
   position: absolute;
@@ -136,7 +155,7 @@
   font-style: Regular;
   text-align: left;
   font-family: Poppins;
-  font-weight: 400;
+  font-weight: 500;
   line-height: normal;
   font-stretch: normal;
   text-decoration: none;
@@ -145,13 +164,13 @@
   top: 20px;
   left: 297px;
   width: 7px;
-  height: 3px;
+  height: 5px;
   position: absolute;
 }
 .desktop30-group7 {
-  top: 707px;
+  top: 1722px;
   left: 0px;
-  width: 1440px;
+  width: 100%;
   height: 273px;
   display: flex;
   position: absolute;
@@ -160,10 +179,10 @@
   background-color: rgba(17, 22, 150, 0.8500000238418579);
 }
 .desktop30-text08 {
-  top: 47px;
+  top: 20%;
   left: 631px;
   color: rgba(255, 255, 255, 1);
-  width: 179px;
+  width: 100%;
   height: auto;
   position: absolute;
   font-size: 55px;
@@ -177,7 +196,7 @@
 }
 .desktop30-text10 {
   top: 128px;
-  left: 583px;
+  left: 620px;
   color: rgba(207, 204, 204, 1);
   height: auto;
   position: absolute;
@@ -191,8 +210,8 @@
   text-decoration: none;
 }
 .desktop30-text12 {
-  top: 166px;
-  left: 512px;
+  top: 170px;
+  left: 550px;
   color: rgba(207, 204, 204, 1);
   height: auto;
   position: absolute;
@@ -457,7 +476,7 @@ input[type="submit"] {
   height: auto;
   position: absolute;
   font-size: 19px;
-  
+
   text-align: center;
   font-family: Poppins;
   font-weight: 500;
@@ -666,13 +685,13 @@ input[type="submit"] {
   position: absolute;
 }
 label {
-  
+
   color: rgba(144, 132, 132, 1);
   font-size: 21px;
   font-style: Medium;
   text-align: left;
   font-family: Poppins;
-  
+
   display: inline-block;
 }
 .desktop30-text53 {

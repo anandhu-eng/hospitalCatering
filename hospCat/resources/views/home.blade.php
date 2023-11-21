@@ -360,7 +360,7 @@
                 <span class="desktop27-text10"><span>Cart</span></span>
                 <span class="desktop27-text12"><span>Home</span></span>
               </div>
-              
+
             </div>
           </div>
           <form class="example" action="action_page.php">
@@ -395,9 +395,8 @@
                   class="desktop27-vector05"
                 />
                 <span class="desktop27-text22"><span>4.3</span></span>
-                
+                <button class="addtocart" onclick="addtocart()">+</button>
               </div>
-              
             </div>
             
           </div>
@@ -409,6 +408,12 @@
         </div>
       </div>
     </div>
+    <script>
+        function addtocart() {
+            alert('Added to the cart!');
+        }
+
+    </script>
   </body>
 </html>
 
