@@ -7,7 +7,7 @@
     <meta property="twitter:card" content="summary_large_image" />
 
     <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+      html {  line-height: 1.15;} body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth;  }
     </style>
     <style data-tag="default-style-sheet">
       html {
@@ -26,18 +26,18 @@
         background-color: var(--dl-color-gray-white);
 
       }
-input[type="number"] {
+      input[type="number"] {
             width: 50px;
             text-align: center;
             margin: 0 10px;
 
-        }
-button {
+      }
+      button {
             padding: 20px 10px;
             cursor: pointer;
             font-size: 14px;
-left: 500px;
-        }
+            left: 500px;
+      }
     </style>
 
 
@@ -222,11 +222,6 @@ left: 500px;
               <span class="desktop30-text04"><span>Cart</span></span>
               <span class="desktop30-text06"><span>Home</span></span>
             </div>
-            <img
-              src="public/external/vector1551-wq2u.svg"
-              alt="Vector1551"
-              class="desktop30-vector02"
-            />
         </div>
         <div class="desktop30-group7">
             <span class="desktop30-text08"><span>Medimenu</span></span>
@@ -239,13 +234,6 @@ left: 500px;
         </div>
 
         <div class="desktop30-group87">
-            <a href="">
-              <img
-                src="public/external/vector1551-8hqe.svg"
-                alt="red symbol"
-              class="desktop30-vector07"
-              />
-            </a>
             <span class="desktop30-text14"><span>Your Order</span></span>
             <span class="desktop30-text16">
               <span>
@@ -254,13 +242,13 @@ left: 500px;
             </span>
             <div class="desktop30-group37">
               <span class="desktop30-text23"><span>Ceasar Salad</span></span>
-             <label  >
-              <!-- Decrement button -->
-              <button onclick="decrement()">-</button>
-              <!-- Input box -->
-              <input type="number" id="quantity" value="0" min="0">
-              <!-- Increment button -->
-              <button onclick="increment()">+</button>
+              <label class="box2" >
+               <!-- Decrement button -->
+               <button onclick="decrement()">-</button>
+               <!-- Input box -->
+               <input type="number" id="quantity" value="0" min="0">
+               <!-- Increment button -->
+               <button onclick="increment()">+</button>
              </label>
 
              <script>
@@ -296,9 +284,9 @@ left: 500px;
             </div>
             <div class="desktop30-group38">
               <span class="desktop30-text39"><span>Ceasar Salad</span></span>
-              <label>
+              <label class="box1">
                 <!-- Decrement button -->
-                  <button onclick="decrement()">-</button>
+                  <button onclick="decrement()">- </button>
                   <!-- Input box -->
                   <input type="number" id="quantity" value="0" min="0">
                   <!-- Increment button -->
@@ -322,49 +310,9 @@ left: 500px;
               </script>
               <span class="desktop30-text41"><span>Rs.60</span></span>
             </div>
-
-            <img
-              src="public/external/line31551-lvo.svg"
-              alt="Line31551"
-              class="desktop30-line3"
-            />
-            <div class="desktop30-group42">
-              <span class="desktop30-text45">
-                <span>Delivery Address</span>
-              </span>
-            </div>
-
-            <div class="desktop30-group46">
-              <span class="desktop30-text49"><span>Payment</span></span>
-              <img
-                src="public/external/vector1551-sjp8.svg"
-                alt="Vector1551"
-                class="desktop30-vector10"
-              />
-            </div>
-            <div class="desktop30-group56">
-              <div class="desktop30-group44">
-                <img
-                  src="public/external/line41551-c9ol.svg"
-                  alt="Line41551"
-                  class="desktop30-line4"
-                />
-                <form action="submit_form.php" method="post">
-                 <label>
-                  <input type="checkbox" name="upi"> UPI
-                 </label>
-                 <br><br>
-                 <label>
-                  <input type="checkbox" name="cashondelivery"> Cash on delivery
-                 </label>
-                 <br>
-
-
-                 <input type="Submit" value="Proceed to Pay">
-               </form>
-              </div>
-
-            </div>
+            <br>
+            <input type="Submit" value="Proceed">
+            
         </div>
       </div>
     </div>
