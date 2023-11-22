@@ -191,7 +191,7 @@
     /* Style the form container */
     .form-container {
       max-width: 400px;
-      margin: 200px 0 0 50px; /* Set top margin to 100px, left margin to 50px */
+      margin: 200px 0 0 110px; /* Set top margin to 100px, left margin to 50px */
       padding: 20px;
     }
 
@@ -257,50 +257,68 @@
                   </div>
                 </div>
                 <select id="profile" name="profile" class="desktop30-text02" >
-        <option value="Profile">Profile</option>
-        <option value="Myorders">My Orders</option>
-        <option value="Logout">Logout</option>
-    </select>
+                  <option value="{{ route('profile') }}">Profile</option>
+                  <option value="{{ route('login') }}">My Orders</option>
+                  <option value="{{ route('login') }}">Logout</option>
+                </select>
+                <script>
+                  document.getElementById('profile').addEventListener('change', function(event) {
+                  window.location.href = event.target.value;
+                  });
+</script>
               </div>
               <span class="desktop34-text10"><span>Cart</span></span>
               <span class="desktop34-text12"><span>Home</span></span>
             </div>
-            <img
-              src="<?php echo asset('patientProf/external/')?>/vector1611-dsng.svg"
-              alt="Vector1611"
-              class="desktop34-vector2"
-            />
           </div>
           
           <span class="desktop34-text14"><span>Personal Details</span></span>
          
           <div class="form-container">
+            <span class="name"><span>Name </span></span>
+            <span class="colon"><span>:</span></span>
+            <span class="name1"><span>ABCD</span></span><br><br><br>
+            <span class="phoneno"><span>Phone No</span></span>
+            <span class="colon"><span>:</span></span>
+            <span class="phoneno1"><span>965723</span></span><br><br><br>
+            <span class="wardno"><span>Ward No </span></span>
+            <span class="colon"><span>:</span></span>
+            <span class="wardno1"><span>2</span></span><br><br><br>
+            <span class="roomno"><span>Room No</span></span>
+            <span class="colon"><span>:</span></span>
+            <span class="roomno1"><span>5</span></span><br><br><br>
+            <span class="bedno"><span>Bed no</span></span>
+            <span class="colon"><span>:</span></span>
+            <span class="bedno1"><span>7</span></span><br><br><br>
+            <!--<span class="bystandername"><span>By stander's name :</span></span><br><br><br>
+            <span class="bystanderno"><span>By stander's no :</span></span><br><br><br>
 
-    <form action="/submit" method="post">
-      <label for="username">Name:</label>
-      <input type="text" id="username" name="username" required> 
+            <form action="/submit" method="post">
+              <label for="username">Name:</label>
+              <input type="text" id="username" name="username" required> 
 
-      <label for="password">Phone no:</label>
-      <input type="password" id="password" name="password" required>
+              <label for="password">Phone no:</label>
+              <input type="password" id="password" name="password" required>
 
-      <label for="password">Ward no:</label>
-      <input type="password" id="password" name="password" required>
+              <label for="password">Ward no:</label>
+              <input type="password" id="password" name="password" required>
 
-      <label for="password">Room no:</label>
-      <input type="password" id="password" name="password" required>
+              <label for="password">Room no:</label>
+              <input type="password" id="password" name="password" required>
 
-      <label for="password">Bed no:</label>
-      <input type="password" id="password" name="password" required>
+              <label for="password">Bed no:</label>
+              <input type="password" id="password" name="password" required>
 
-      <label for="password">Bystander's Name:</label>
-      <input type="password" id="password" name="password" required>
+              <label for="password">Bystander's Name:</label>
+              <input type="password" id="password" name="password" required>
 
-      <label for="password">Bystander'sno:</label>
-      <input type="password" id="password" name="password" required>
+              <label for="password">Bystander'sno:</label>
+              <input type="password" id="password" name="password" required>
 
-    </form>
-  </div>
-
-
+            </form>-->
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

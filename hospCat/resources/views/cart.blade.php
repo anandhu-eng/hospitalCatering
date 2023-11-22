@@ -242,24 +242,24 @@
             </span>
             <div class="desktop30-group37">
               <span class="desktop30-text23"><span>Ceasar Salad</span></span>
-              <label class="box2" >
+              <label class="box2"  >
                <!-- Decrement button -->
-               <button onclick="decrement()">-</button>
+               <button onclick="decrement1()">-</button>
                <!-- Input box -->
-               <input type="number" id="quantity" value="0" min="0">
+               <input type="number" id="quantity1" value="1" min="0">
                <!-- Increment button -->
-               <button onclick="increment()">+</button>
+               <button onclick="increment1()">+</button>
              </label>
 
              <script>
               // JavaScript functions for increment and decrement
-              function increment() {
-               var input = document.getElementById('quantity');
+              function increment1() {
+               var input = document.getElementById('quantity1');
                input.value = parseInt(input.value, 10) + 1;
               }
 
-              function decrement() {
-               var input = document.getElementById('quantity');
+              function decrement1() {
+               var input = document.getElementById('quantity1');
                var value = parseInt(input.value, 10);
                if (value > 0) {
                 input.value = value - 1;
@@ -284,24 +284,24 @@
             </div>
             <div class="desktop30-group38">
               <span class="desktop30-text39"><span>Ceasar Salad</span></span>
-              <label class="box1">
+              <label class="box1" >
                 <!-- Decrement button -->
-                  <button onclick="decrement()">- </button>
+                  <button onclick="decrement2()">-</button>
                   <!-- Input box -->
-                  <input type="number" id="quantity" value="0" min="0">
+                  <input type="number" id="quantity2" value="1" min="0">
                   <!-- Increment button -->
-                  <button onclick="increment()">+</button>
+                  <button onclick="increment2()">+</button>
               </label>
 
               <script>
                 // JavaScript functions for increment and decrement
-                function increment() {
-                 var input = document.getElementById('quantity');
+                function increment2() {
+                 var input = document.getElementById('quantity2');
                  input.value = parseInt(input.value, 10) + 1;
                 }
 
-                function decrement() {
-                 var input = document.getElementById('quantity');
+                function decrement2() {
+                 var input = document.getElementById('quantity2');
                  var value = parseInt(input.value, 10);
                  if (value > 0) {
                    input.value = value - 1;
