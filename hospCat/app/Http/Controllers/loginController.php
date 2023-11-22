@@ -25,8 +25,7 @@ class loginController extends Controller
 
                 // return $food_records;    
                 // return $patient_details;
-                // return redirect()->route('home')
-                // ->with('patient_details', $patient_details)
+                // return redirect()->route('home')->with('patient_details', $patient_details)
                 // ->with('food_records', $food_records);
 
 

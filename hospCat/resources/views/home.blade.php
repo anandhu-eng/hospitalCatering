@@ -352,7 +352,7 @@
                     </div>
                   </div>
                   <select id="profile" name="profile" class="desktop27-text08" >
-                    <a href="http://127.0.0.1:8000/profile?pid={{$patient_details}}"><option value="profile">Profile</option></a>
+                    <option value="{{ route('profile') }}">Profile</option></a>
                     <option value="{{ route('login') }}">My Orders</option>
                     <option value="{{ route('login') }}">Logout</option>
                   </select>
@@ -360,6 +360,7 @@
                    document.getElementById('profile').addEventListener('change', function(event) {
                    window.location.href = event.target.value;
                    });
+                  </script>
                 </div>
                 <form method="get" action="/cart">
                 <button type="submit" class="desktop27-text10">Cart</button></form>
@@ -376,50 +377,45 @@
           <div class="desktop27-group821">
             <span class="desktop27-text16"><span>Menu</span></span>
           </div>
-          @foreach ($food_records as $index => $food)
-          <div class="desktop27-group821">
-            
+          
+          <div class="desktop27-group821a">
+           @foreach ($food_records as $index => $food)
             
             <div class="desktop27-group17">
-            
+              <img
+                src="<?php echo asset('homepg/external/')?>/vector1559-slvw.svg"
+                alt="Vector1559"
+                class="desktop27-vector04"
+              />
               <img
                 src="<?php echo asset('homepg/images/')?>/food.png"
                 alt="food pic"
                 class="desktop27-anhnguyenkc-ac3f3f-eunsplashremovebgpreview1"
               />
               <span class="desktop27-text18"><span>{{$food->FName}}</span></span>
+              <button class="addtocart" onclick="addtocart()">+</button>
+              <br>
+              <script>
+                function addtocart() {
+                 alert('Added to the cart!');
+                }
+
+              </script>
               <span class="desktop27-text20"><span>{{$food->Price}}</span></span>
-              <img
-                src="<?php echo asset('homepg/external/')?>/vector1559-slvw.svg"
-                alt="Vector1559"
-                class="desktop27-vector04"
-              />
-              <div class="desktop27-group15">
-                <img
-                  src="<?php echo asset('homepg/external/')?>/vector1559-q7sp.svg"
-                  alt="Vector1559"
-                  class="desktop27-vector05"
-                />
-                <span class="desktop27-text22"><span>4.3</span></span>
-                <button class="addtocart" onclick="addtocart()">+</button>
-              </div>
+              
             </div>
-            
+           @endforeach
+           
           </div>
 
-          @if (($index + 1) % 4 === 0)
+          <!--@if (($index + 1) % 4 === 0)
               <br>
-          @endif
-          @endforeach
+          @endif-->
+          
         </div>
       </div>
     </div>
-    <script>
-        function addtocart() {
-            alert('Added to the cart!');
-        }
-
-    </script>
+    
   </body>
 </html>
 
