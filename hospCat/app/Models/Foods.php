@@ -10,5 +10,5 @@ class Foods extends Model
     use HasFactory;
 
     protected $primaryKey = 'FID';
-    protected $fillable = ['FName', 'Price', 'Description'];
+    protected $fillable = ['FName', 'Price', 'Description', 'Quantity'];
 }
