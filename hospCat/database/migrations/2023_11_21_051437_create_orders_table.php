@@ -14,8 +14,9 @@ class CreateOrdersTable extends Migration
             $table->foreign('FID')->references('FID')->on('foods');
             $table->unsignedBigInteger('PID');
             $table->foreign('PID')->references('PID')->on('patient_details');
-            $table->integer('WardNo');
-            $table->string('DeliveryStatus')->default('Pending');
+            $table->string('WardNo');
+            $table->string('DeliveryStatus')->default(999);
+            //DeliveryStatus: 0=>added to cart, 1=>order confirmed, 2=>delivered
             $table->number('Quantity');
             // $table->timestamps();
         });

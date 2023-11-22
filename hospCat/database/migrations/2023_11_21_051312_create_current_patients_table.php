@@ -12,7 +12,7 @@ class CreateCurrentPatientsTable extends Migration
             $table->id();
             $table->unsignedBigInteger('PID');
             $table->foreign('PID')->references('PID')->on('patient_details');
-            $table->integer('WardNo');
+            $table->string('WardNo');
             // $table->timestamps();
         });
     }

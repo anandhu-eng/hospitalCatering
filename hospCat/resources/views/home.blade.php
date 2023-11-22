@@ -352,7 +352,7 @@
                     </div>
                   </div>
                   <select id="profile" name="profile" class="desktop27-text08" >
-                    <option value="{{ route('profile') }}">Profile</option>
+                    <a href="http://127.0.0.1:8000/profile?pid={{$patient_details}}"><option value="profile">Profile</option></a>
                     <option value="{{ route('login') }}">My Orders</option>
                     <option value="{{ route('login') }}">Logout</option>
                   </select>
@@ -360,7 +360,6 @@
                    document.getElementById('profile').addEventListener('change', function(event) {
                    window.location.href = event.target.value;
                    });
-                   </script>
                 </div>
                 <form method="get" action="/cart">
                 <button type="submit" class="desktop27-text10">Cart</button></form>

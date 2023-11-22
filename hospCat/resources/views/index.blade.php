@@ -115,10 +115,10 @@
           <span class="desktop1-text06"><span>Medimenu</span></span>
           <div class="desktop1-group77">
             <span class="desktop1-text08">
-              <span>Lorem ipsum dolor sit amet</span>
+              <span>Seamless Hospital Catering System</span>
             </span>
             <span class="desktop1-text10">
-              <span>Lorem ipsum dolor sit amet</span>
+              <span>where patients can order nourishing meals with ease, promoting well-being during their healing journey.</span>
             </span>
           </div>
           <img
@@ -131,12 +131,13 @@
             <span class="desktop1-text12"><span>About</span></span>
             <span class="desktop1-text14">
               <span>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,.
+              Introducing our Hospital Catering Web App, a user-friendly 
+              platform designed for seamless meal management during your stay. 
+              Simply log in with your phone number, explore a diverse menu, 
+              personalize your meal choices, and effortlessly add them to your cart. 
+              Confirm your order, and enjoy the convenience of payment on delivery. 
+              Elevate your hospital experience with nourishing and tailored culinary 
+              options, ensuring your journey to recovery is both comfortable and satisfying.
               </span>
             </span>
           </div>
