@@ -277,19 +277,19 @@
           <div class="form-container">
             <span class="name"><span>Name </span></span>
             <span class="colon"><span>:</span></span>
-            <span class="name1"><span>ABCD</span></span><br><br><br>
+            <span class="name1"><span>{{$patientDetails->PatientName}}</span></span><br><br><br>
             <span class="phoneno"><span>Phone No</span></span>
             <span class="colon"><span>:</span></span>
-            <span class="phoneno1"><span>965723</span></span><br><br><br>
+            <span class="phoneno1"><span>{{$patientDetails->PhNo}}</span></span><br><br><br>
             <span class="wardno"><span>Ward No </span></span>
             <span class="colon"><span>:</span></span>
-            <span class="wardno1"><span>2</span></span><br><br><br>
-            <span class="roomno"><span>Room No</span></span>
+            <span class="wardno1"><span>{{$wardDetails->WardNo}}</span></span><br><br><br>
+            <span class="roomno"><span>Patient Id</span></span>
             <span class="colon"><span>:</span></span>
-            <span class="roomno1"><span>5</span></span><br><br><br>
-            <span class="bedno"><span>Bed no</span></span>
+            <span class="roomno1"><span>{{$patientDetails->PID}}</span></span><br><br><br>
+            <span class="bedno"><span>Address</span></span>
             <span class="colon"><span>:</span></span>
-            <span class="bedno1"><span>7</span></span><br><br><br>
+            <span class="bedno1"><span>{{$patientDetails->Address}}</span></span><br><br><br>
             <!--<span class="bystandername"><span>By stander's name :</span></span><br><br><br>
             <span class="bystanderno"><span>By stander's no :</span></span><br><br><br>
 

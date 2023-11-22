@@ -16,6 +16,7 @@ class CreateOrdersTable extends Migration
             $table->foreign('PID')->references('PID')->on('patient_details');
             $table->integer('WardNo');
             $table->string('DeliveryStatus')->default('Pending');
+            $table->number('Quantity');
             // $table->timestamps();
         });
     }
