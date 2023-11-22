@@ -214,7 +214,7 @@
                   </div>
                 </div>
                 <select id="profile" name="profile" class="desktop30-text02" >
-                    <option value="{{ route('profile') }}">Profile</option>
+                    <option value="{{ route('profilepg') }}">Profile</option>
                     <option value="{{ route('login') }}">My Orders</option>
                     <option value="{{ route('login') }}">Logout</option>
                   </select>

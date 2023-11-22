@@ -257,7 +257,7 @@
                   </div>
                 </div>
                 <select id="profile" name="profile" class="desktop30-text02" >
-                  <option value="{{ route('profile') }}">Profile</option>
+                  <option value="{{ route('profilepg') }}">Profile</option>
                   <option value="{{ route('login') }}">My Orders</option>
                   <option value="{{ route('login') }}">Logout</option>
                 </select>
@@ -265,10 +265,12 @@
                   document.getElementById('profile').addEventListener('change', function(event) {
                   window.location.href = event.target.value;
                   });
-</script>
+                </script>
               </div>
-              <span class="desktop34-text10"><span>Cart</span></span>
-              <span class="desktop34-text12"><span>Home</span></span>
+              <form method="get" action="/cart">
+                <button type="submit" class="desktop34-text10">Cart</button></form>
+                <form method="get" action="/home">
+                <button type="submit" class="desktop34-text12">Home</button></form>
             </div>
           </div>
           
