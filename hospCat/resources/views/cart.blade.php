@@ -214,10 +214,15 @@
                   </div>
                 </div>
                 <select id="profile" name="profile" class="desktop30-text02" >
-                  <option value="Profile">Profile</option>
-                  <option value="Myorders">My Orders</option>
-                  <option value="Logout">Logout</option>
-                </select>
+                    <option value="{{ route('profile') }}">Profile</option>
+                    <option value="{{ route('login') }}">My Orders</option>
+                    <option value="{{ route('login') }}">Logout</option>
+                  </select>
+                  <script>
+                   document.getElementById('profile').addEventListener('change', function(event) {
+                   window.location.href = event.target.value;
+                   });
+                   </script>
               </div>
               <form method="get" action="/cart">
               <button type="submit" class="desktop30-text04">Cart</button></form>

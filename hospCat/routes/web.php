@@ -37,6 +37,9 @@ Route::post('/verify', function () {
 Route::get('/cart', function () {
     return view('cart');
 });
+Route::get('/order', function () {
+    return view('order');
+})->name('order');
 
 // To check whether the number exist in the database
 Route::post('/loginPhCheck', [loginController::class, 'checkNo']);

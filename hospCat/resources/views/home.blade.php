@@ -360,9 +360,12 @@
                    document.getElementById('profile').addEventListener('change', function(event) {
                    window.location.href = event.target.value;
                    });
+                   </script>
                 </div>
-                <span class="desktop27-text10"><span>Cart</span></span>
-                <span class="desktop27-text12"><span>Home</span></span>
+                <form method="get" action="/cart">
+                <button type="submit" class="desktop27-text10">Cart</button></form>
+                <form method="get" action="/home">
+                <button type="submit" class="desktop27-text12">Home</button></form> 
               </div>
 
             </div>

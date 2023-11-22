@@ -49,11 +49,6 @@
     />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Jim+Nightshade:wght@400&amp;display=swap"
       data-tag="font"
     />
@@ -147,177 +142,98 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
       data-tag="font"
     />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-<style>
-    /* Style the form container */
-    .form-container {
-      max-width: 400px;
-      margin: 200px 0 0 110px; /* Set top margin to 100px, left margin to 50px */
-      padding: 20px;
-    }
-
-    /* Style the form inputs */
-    label {
-      display: inline-block;
-      margin-bottom: 1px;
-    }
-
-    input {
-     width: calc(100% - 16px); 
-      padding: 8px;
-      margin-bottom: 10px;
-      box-sizing: border-box;
-    }
-
-    /* Style the submit button */
-    input[type="submit"] {
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin-top: 10px;
-      cursor: pointer;
-    }
-  </style>  </head>
+  </head>
   <body>
     <link rel="stylesheet" href="./style.css" />
     <div>
-      <link href="<?php echo asset('patientProf/css/index.css')?>" rel="stylesheet" />
+      <link href="<?php echo asset('orderpg/index.css')?>" rel="stylesheet" />
 
-      <div class="desktop34-container">
-        <div class="desktop34-desktop34">
-          <span class="desktop34-text"><span>Medimenu</span></span>
-          <div class="desktop34-group7">
-            <span class="desktop34-text02"><span>Medimenu</span></span>
-            <span class="desktop34-text04">
+      <div class="desktop35-container">
+        <div class="desktop35-desktop35">
+          <span class="desktop35-text"><span>Medimenu</span></span>
+          <div class="desktop35-group7">
+            <span class="desktop35-text02"><span>Medimenu</span></span>
+            <span class="desktop35-text04">
               <span>medimenu@gmail.com</span>
             </span>
-            <span class="desktop34-text06">
+            <span class="desktop35-text06">
               <span>Privacy Policy | Terms and Condition</span>
             </span>
           </div>
-          <div class="desktop34-group80">
-            <div class="desktop34-group34">
-              <div class="desktop34-group14">
-                <div class="desktop34-iconamoonprofilecircle">
-                  <div class="desktop34-group">
-                    <img
-                      src="<?php echo asset('patientProf/external/')?>/vector1611-58jl.svg"
-                      alt="Vector1611"
-                      class="desktop34-vector"
-                    />
-                    <img
-                      src="<?php echo asset('patientProf/external/')?>/vector1611-vy0x.svg"
-                      alt="Vector1611"
-                      class="desktop34-vector1"
-                    />
-                  </div>
-                </div>
-                <select id="profile" name="profile" class="desktop30-text02" >
+          <div class="desktop35-group80">
+            <div class="desktop35-group34">
+
+                <select id="profile" name="profile" class="desktop35-text08" >
+                  <option value="{{ route('order') }}">My Orders</option>
                   <option value="{{ route('profile') }}">Profile</option>
-                  <option value="{{ route('login') }}">My Orders</option>
+                    
                   <option value="{{ route('login') }}">Logout</option>
                 </select>
                 <script>
-                  document.getElementById('profile').addEventListener('change', function(event) {
-                  window.location.href = event.target.value;
-                  });
+                   document.getElementById('profile').addEventListener('change', function(event) {
+                   window.location.href = event.target.value;
+                   });
                 </script>
               </div>
               <form method="get" action="/cart">
-                <button type="submit" class="desktop34-text10">Cart</button></form>
-                <form method="get" action="/home">
-                <button type="submit" class="desktop34-text12">Home</button></form>
+              <button type="submit" class="desktop35-text10">Cart</button></form>
+              <form method="get" action="/home">
+              <button type="submit" class="desktop35-text12">Home</button></form> 
+
             </div>
-          </div>
+         </div>
+          <div class="desktop35-group96">
+           
+            <span class="desktop35-text14"><span>My Orders</span></span>
+            <div class="desktop35-group64">
+              <span class="desktop35-text16">
+                <span>Yet to be Delivered</span>
+              </span>
+              <span class="desktop35-text18">
+                <span>Order ID - 147852</span>
+              </span>
+            </div>
+            <div class="desktop35-group65">
+              <span class="desktop35-text20">
+                <span>Delivered on Nov 10</span>
+              </span>
+              <span class="desktop35-text22">
+                <span>Order ID - 147852</span>
+              </span>
+            
+            </div>
+            <div class="desktop35-group66">
+              <span class="desktop35-text24">
+                <span>Delivered on Nov 10</span>
+              </span>
+              <span class="desktop35-text26">
+                <span>Order ID - 147852</span>
+              </span>
+            </div>
+            <div class="desktop35-group67">
+              <span class="desktop35-text28"><span>Refunded</span></span>
+              <span class="desktop35-text30">
+                <span>Order ID - 147852</span>
+              </span>
+              
+            </div>
+            <div class="desktop35-group68">
+              <span class="desktop35-text32">
+                <span>Delivered on Nov 10</span>
+              </span>
+              <span class="desktop35-text34">
+                <span>Order ID - 147852</span>
+              </span>
           
-          <span class="desktop34-text14"><span>Personal Details</span></span>
-         
-          <div class="form-container">
-            <span class="name"><span>Name </span></span>
-            <span class="colon"><span>:</span></span>
-            <span class="name1"><span>{{$patientDetails->PatientName}}</span></span><br><br><br>
-            <span class="phoneno"><span>Phone No</span></span>
-            <span class="colon"><span>:</span></span>
-            <span class="phoneno1"><span>{{$patientDetails->PhNo}}</span></span><br><br><br>
-            <span class="wardno"><span>Ward No </span></span>
-            <span class="colon"><span>:</span></span>
-            <span class="wardno1"><span>{{$wardDetails->WardNo}}</span></span><br><br><br>
-            <span class="roomno"><span>Patient Id</span></span>
-            <span class="colon"><span>:</span></span>
-            <span class="roomno1"><span>{{$patientDetails->PID}}</span></span><br><br><br>
-            <span class="bedno"><span>Address</span></span>
-            <span class="colon"><span>:</span></span>
-            <span class="bedno1"><span>{{$patientDetails->Address}}</span></span><br><br><br>
-            <!--<span class="bystandername"><span>By stander's name :</span></span><br><br><br>
-            <span class="bystanderno"><span>By stander's no :</span></span><br><br><br>
-
-            <form action="/submit" method="post">
-              <label for="username">Name:</label>
-              <input type="text" id="username" name="username" required> 
-
-              <label for="password">Phone no:</label>
-              <input type="password" id="password" name="password" required>
-
-              <label for="password">Ward no:</label>
-              <input type="password" id="password" name="password" required>
-
-              <label for="password">Room no:</label>
-              <input type="password" id="password" name="password" required>
-
-              <label for="password">Bed no:</label>
-              <input type="password" id="password" name="password" required>
-
-              <label for="password">Bystander's Name:</label>
-              <input type="password" id="password" name="password" required>
-
-              <label for="password">Bystander'sno:</label>
-              <input type="password" id="password" name="password" required>
-
-            </form>-->
+            </div>
+            <div class="desktop35-group69">
+              <span class="desktop35-text36">
+                <span>Delivered on Nov 10</span>
+              </span>
+              <span class="desktop35-text38">
+                <span>Order ID - 147852</span>
+              </span>
+            </div>
           </div>
         </div>
       </div>
