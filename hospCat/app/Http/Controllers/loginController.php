@@ -25,15 +25,20 @@ class loginController extends Controller
 
                 // return $food_records;    
                 // return $patient_details;
+                // return redirect()->route('home')
+                // ->with('patient_details', $patient_details)
+                // ->with('food_records', $food_records);
+
+
                 return view('home', ['patient_details' => $patient_details,
                 'food_records' => $food_records]);
 
             }
         }
-        //send otp to the user if approved
-        return redirect()->route('login')
-        ->with('message', 'User with the mobine number is not currently admitted to hospital!');
-        
+        // else{
+        // return redirect()->route('login')
+        // ->with('message', 'User with the mobine number is not currently admitted to hospital!');
+        // }
     }
 }
 

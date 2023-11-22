@@ -23,6 +23,9 @@ Route::get('/home', function () {
     return view('home');
 })->name('home');
 
+// Route to get the profile details
+Route::get('/profile',[profileController::class, 'viewProfile'])->name('profile');
+
 Route::get('/login', function () {
     return view('login.login');
 })->name('login');
@@ -44,5 +47,3 @@ Route::post('/addCart',[addCartController::class, 'cartJsonRequest']);
 // Route to view the cart details
 Route::get('/viewCart',[viewCartController::class, 'viewCart']);
 
-// Route to get the profile details
-Route::get('/profile',[profileController::class, 'viewProfile']);
