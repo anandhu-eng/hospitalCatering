@@ -37,7 +37,7 @@ Route::get('/cart', function () {
 
 Route::get('/patientProfile', function () {
     return view('patientProfile');
-})->name('profilepg');
+})->name('profile');
 
 
 // To check whether the number exist in the database
