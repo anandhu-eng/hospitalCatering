@@ -31,6 +31,7 @@
     flex-shrink: 1;
 }
 .desktop30-text {
+    top:8px;
     color: rgba(17, 22, 150, 1);
     width: 195px;
     height: auto;
@@ -66,8 +67,8 @@
   flex-shrink: 1;
 }
 .desktop30-group14 {
-  top: 0px;
-  left: 186px;
+  top: 12px;
+  left: 200px;
   width: 105px;
   height: 39px;
   display: flex;
@@ -126,7 +127,7 @@
   text-decoration: none;
 }
 .desktop30-text04 {
-  top: 6px;
+  margin-top: 0px;
   left: 150px;
   color: rgba(0, 0, 0, 1);
   height: auto;
@@ -140,7 +141,6 @@
   text-decoration: none;
 }
 .desktop30-text06 {
-  top: 6px;
   left:50px;
   color: rgba(0, 0, 0, 1);
   height: auto;

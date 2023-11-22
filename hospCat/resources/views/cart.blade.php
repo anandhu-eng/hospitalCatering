@@ -219,8 +219,10 @@
                   <option value="Logout">Logout</option>
                 </select>
               </div>
-              <span class="desktop30-text04"><span>Cart</span></span>
-              <span class="desktop30-text06"><span>Home</span></span>
+              <form method="get" action="/cart">
+              <button type="submit" class="desktop30-text04">Cart</button></form>
+              <form method="get" action="/home">
+              <button type="submit" class="desktop30-text06">Home</button></form> 
             </div>
         </div>
         <div class="desktop30-group7">
