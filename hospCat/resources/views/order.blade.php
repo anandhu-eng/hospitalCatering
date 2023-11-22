@@ -185,6 +185,7 @@
           <div class="desktop35-group96">
            
             <span class="desktop35-text14"><span>My Orders</span></span>
+            @foreach ($allOrders as $index => $order)
             <div class="desktop35-group64">
               <span class="desktop35-text18">
                 <button class="but" onclick="ordered()">Order ID - 147852</button>
@@ -195,6 +196,7 @@
                 </script>
               </span>
             </div>
+            @endforeach
           </div>
         </div>
       </div>

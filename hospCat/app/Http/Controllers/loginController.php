@@ -20,17 +20,20 @@ class loginController extends Controller
                 // store user credentials in the session
                 $request->session()->put('user', ['id'=>$currentPatient->PID]);
                 $patient_details = $currentPatient->PID;
-                $food_records = Foods::all();
+                // $food_records = Foods::all();
+                // if ($food_records && $patient_details){
+                //     return response()->json($food_records);
+                //     return to_route('home', compact('food_records', 'patient_details'));
+                // }
 
                 // return $food_records;
                 // return $patient_details;
-                // return redirect()->route('home')
-                // ->with('patient_details', $patient_details)
-                // ->with('food_records', $food_records);
+                // return to_route('home', ['patient_details' => $patient_details,'food_records' => $food_records]);
+                // return to_route('home', compact('patient_details', 'food_records'));
 
-
-                return view('home', ['patient_details' => $patient_details,
-                'food_records' => $food_records]);
+                // return view('home', ['patient_details' => $patient_details,
+                // 'food_records' => $food_records]);
+                return to_route('home');
 
             }
         }
@@ -39,9 +42,24 @@ class loginController extends Controller
         ->with('message', 'User with the mobine number is not currently admitted to hospital!');
         }
     }
+    //for the home page
+    public function home(Request $request){
+        $pid=$request->session()->get('user');
+        if($pid){
+            $food_records = Foods::all();
+            return view('home', ['food_records' => $food_records]);
+        }
+        else{
+            return redirect()->route('login')
+        ->with('message', 'User not logged in!');
+        }
+    }
     public function logOut(Request $request)
     {
         // Clear user session upon logout
         $request->session()->forget('user');
+        // For a route with the following URI: profile/{id}
+        return redirect()->route('login')
+        ->with('message', 'User logged out!');
     }
 }

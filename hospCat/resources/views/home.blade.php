@@ -324,7 +324,7 @@
             // console.log("Selected Option: ",selectedOption); 
             window.location.href = selectedOption;
      }
-  </script>
+</script>
   <body>
     <link rel="stylesheet" href="./style.css" />
     <div>
@@ -359,35 +359,50 @@
                         class="desktop27-vector01"
                       />
                     </div>
+
                   </div>
-                  <select id="profile" name="profile" class="desktop27-text08" onchange="handleProfileChange(this)">
-                    <option value="{{ route('profile', ['pid' => $patient_details]) }}">Profile</option>
+                  <select id="profiledp" name="profiledp" class="desktop27-text08" onchange="handleProfileChange(this)">
+                    <option value="">User</option>
+                    <option value="{{ route('profile') }}">Profile</option>
                     <option value="{{ route('cart') }}">My Orders</option>
                     <option value="{{ route('logOut') }}">Logout</option>
                   </select>
                   <script>
-                   document.getElementById('profile').addEventListener('change', function(event) {
+                   document.getElementById('profiledp').addEventListener('change', function(event) {
                    window.location.href = event.target.value;
                    });
                   </script>  
                 </div>
-                <form method="get" action="/cart">
-                <button type="submit" class="desktop27-text10">Cart</button></form>
-                <form method="get" action="/home">
-                <button type="submit" class="desktop27-text12">Home</button></form> 
+                <button id="cart" class="desktop27-text10">Cart</button></form>
+                <script>
+                  // Add an event listener to the button
+                  document.getElementById('cart').addEventListener('click', function() {
+                    // Change the URL to the desired route
+                    window.location.href = "{{ route('cart') }}"; // Replace '/your-route' with the actual route
+                  });
+                </script>
+                <button id="home" class="desktop27-text12">Home</button></form> 
+                <script>
+                  // Add an event listener to the button
+                  document.getElementById('home').addEventListener('click', function() {
+                    // Change the URL to the desired route
+                    window.location.href = "{{ route('home') }}"; // Replace '/your-route' with the actual route
+                  });
+                </script>
               </div>
 
             </div>
           </div>
-          <form class="example" action="action_page.php">
-            <input type="text" placeholder="Search for your favourite dish " name="search" > <p>&nbsp</p>
-            <button type="submit"><i class="fa fa-search"></i></button>
-          </form>
+          <div class="example">
+            <input type="text" placeholder="Search for your favourite dish " name="search" id="search"> <p>&nbsp</p>
+            <button type="button" onclick="search()"><i class="fa fa-search"></i></button>
+          </div>
+
           <div class="desktop27-group821">
             <span class="desktop27-text16"><span>Menu</span></span>
           </div>
           
-          <div class="desktop27-group821a">
+          <div class="desktop27-group821a" id="desktop27-group821a">
            @foreach ($food_records as $index => $food)
             
             <div class="desktop27-group17">
@@ -406,7 +421,7 @@
               <br>
               <script>
                 function addtocart() {
-                 alert('Added to the cart!');
+                 alert('Added to the cart!'); 
                 }
 
               </script>
@@ -416,6 +431,26 @@
            @endforeach
            
           </div>
+          <script>
+            function search() {
+            var input = document.getElementById('search').value.toLowerCase();
+            var foodContainer = document.getElementById('desktop27-group821a');
+            if (foodContainer) {
+              var foodItems = foodContainer.getElementsByClassName('desktop27-group17');
+              for (var i = 0; i < foodItems.length; i++) {
+                var foodName = foodItems[i].getElementsByClassName('desktop27-text18')[0].innerText.toLowerCase();  
+                if (foodName.includes(input)) {
+                    foodItems[i].style.display = '';
+                } else {
+                    foodItems[i].style.display = 'none';
+                }
+              }
+            } else {
+              alert("Food container not found");
+            }
+            }
+          </script>
+
 
           <!--@if (($index + 1) % 4 === 0)
               <br>

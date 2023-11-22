@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\loginController;
 use App\Http\Controllers\viewCartController;
 use App\Http\Controllers\profileController;
+use App\Http\Controllers\orderController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,14 +15,11 @@ use App\Http\Controllers\profileController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
 Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/home', function () {
-    return view('home');
-})->name('home');
+Route::get('/home', [loginController::class, 'home'])->name('home');
 
 // Route to get the profile details
 Route::get('/profile',[profileController::class, 'viewProfile'])->name('profile');
@@ -37,9 +35,9 @@ Route::post('/verify', function () {
 Route::get('/cart', function () {
     return view('cart');
 })->name('cart');
-Route::get('/order', function () {
-    return view('order');
-})->name('order');
+
+// Route for viewing the orders
+Route::get('/order', [orderController::class, 'viewOrders'])->name('order');
 
 // To check whether the number exist in the database
 Route::post('/loginPhCheck', [loginController::class, 'checkNo']);
@@ -52,3 +50,4 @@ Route::get('/viewCart',[viewCartController::class, 'viewCart']);
 
 //Route for the user to log out
 Route::get('/logOut',[loginController::class, 'logOut'])->name('logOut');
+
