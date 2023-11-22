@@ -32,11 +32,11 @@ Route::get('/login', function () {
 
 Route::post('/verify', function () {
     return view('login.verify');
-});
+})->name('verify');
 
 Route::get('/cart', function () {
     return view('cart');
-});
+})->name('cart');
 Route::get('/order', function () {
     return view('order');
 })->name('order');
@@ -50,3 +50,5 @@ Route::post('/addCart',[addCartController::class, 'cartJsonRequest']);
 // Route to view the cart details
 Route::get('/viewCart',[viewCartController::class, 'viewCart']);
 
+//Route for the user to log out
+Route::get('/logOut',[loginController::class, 'logOut'])->name('logOut');

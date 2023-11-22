@@ -316,6 +316,15 @@
     }
   </style>
   </head>
+  <script>
+    function handleProfileChange(select) {
+            // console.log("Select Element: ", select);
+            // console.log("Selected Index: ", select.selectedIndex);
+            var selectedOption = select.options[select.selectedIndex].value;
+            // console.log("Selected Option: ",selectedOption); 
+            window.location.href = selectedOption;
+     }
+  </script>
   <body>
     <link rel="stylesheet" href="./style.css" />
     <div>
@@ -351,10 +360,10 @@
                       />
                     </div>
                   </div>
-                  <select id="profile" name="profile" class="desktop27-text08" >
-                    <option value="{{ route('profile') }}">Profile</option></a>
-                    <option value="{{ route('login') }}">My Orders</option>
-                    <option value="{{ route('login') }}">Logout</option>
+                  <select id="profile" name="profile" class="desktop27-text08" onchange="handleProfileChange(this)">
+                    <option value="{{ route('profile', ['pid' => $patient_details]) }}">Profile</option>
+                    <option value="{{ route('cart') }}">My Orders</option>
+                    <option value="{{ route('logOut') }}">Logout</option>
                   </select>
                   <script>
                    document.getElementById('profile').addEventListener('change', function(event) {

@@ -17,15 +17,15 @@ class loginController extends Controller
         if($patient){
             $currentPatient = CurrentPatient::where('PID',$patient->PID)->first();
             if ($currentPatient){
-                //contents  to be displayed in home page
-                // patient details(PID only), food items
-
+                // store user credentials in the session
+                $request->session()->put('user', ['id'=>$currentPatient->PID]);
                 $patient_details = $currentPatient->PID;
                 $food_records = Foods::all();
 
-                // return $food_records;    
+                // return $food_records;
                 // return $patient_details;
-                // return redirect()->route('home')->with('patient_details', $patient_details)
+                // return redirect()->route('home')
+                // ->with('patient_details', $patient_details)
                 // ->with('food_records', $food_records);
 
 
@@ -34,10 +34,14 @@ class loginController extends Controller
 
             }
         }
-        // else{
-        // return redirect()->route('login')
-        // ->with('message', 'User with the mobine number is not currently admitted to hospital!');
-        // }
+        else{
+        return redirect()->route('login')
+        ->with('message', 'User with the mobine number is not currently admitted to hospital!');
+        }
+    }
+    public function logOut(Request $request)
+    {
+        // Clear user session upon logout
+        $request->session()->forget('user');
     }
 }
-
