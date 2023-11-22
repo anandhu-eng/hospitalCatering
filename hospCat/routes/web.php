@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\loginController;
 use App\Http\Controllers\viewCartController;
-
+use App\Http\Controllers\profileController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -48,3 +48,6 @@ Route::post('/addCart',[addCartController::class, 'cartJsonRequest']);
 
 // Route to view the cart details
 Route::get('/viewCart',[viewCartController::class, 'viewCart']);
+
+// Route to get the profile details
+Route::get('/profile',[profileController::class, 'viewProfile']);

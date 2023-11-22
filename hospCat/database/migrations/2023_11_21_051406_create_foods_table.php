@@ -13,7 +13,6 @@ class CreateFoodsTable extends Migration
             $table->string('FName');
             $table->decimal('Price', 8, 2);
             $table->string('Description');
-            $table->number('Quantity');
             // $table->timestamps();
         });
     }
