@@ -189,13 +189,16 @@
                 <input type="text" id="phone" name="phone" placeholder="eg: 9495920102" required>
             </div>
             <div class="btn-container">
-                <button value="Submit" type="submit">Receive OTP</button>
+                <button value="Submit" type="submit">Login</button>
             </div>
          </form>
          <div class="p">
-            By clicking on receive OTP , I accept the Terms and Conditions
+            By clicking on login , I accept the Terms and Conditions
             &amp; the Privacy Policy
           </div>
+          @if (session('message'))
+            <div class="alert", style='color:red'>{{ session('message') }}</div>
+          @endif
         </div>
       </div>
     </div>
