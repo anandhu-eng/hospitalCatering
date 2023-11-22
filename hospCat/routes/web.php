@@ -20,11 +20,11 @@ Route::get('/', function () {
 
 Route::get('/home', function () {
     return view('home');
-});
+})->name('home');
 
 Route::get('/login', function () {
     return view('login.login');
-});
+})->name('login');
 
 Route::post('/verify', function () {
     return view('login.verify');
@@ -36,7 +36,7 @@ Route::get('/cart', function () {
 
 Route::get('/patientProfile', function () {
     return view('patientProfile');
-});
+})->name('profile');
 
 
 // To check whether the number exist in the database

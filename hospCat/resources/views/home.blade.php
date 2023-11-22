@@ -352,10 +352,14 @@
                     </div>
                   </div>
                   <select id="profile" name="profile" class="desktop27-text08" >
-                    <option value="Profile">Profile</option>
-                    <option value="Myorders">My Orders</option>
-                    <option value="Logout">Logout</option>
+                    <option value="{{ route('profile') }}">Profile</option>
+                    <option value="{{ route('login') }}">My Orders</option>
+                    <option value="{{ route('login') }}">Logout</option>
                   </select>
+                  <script>
+                   document.getElementById('profile').addEventListener('change', function(event) {
+                   window.location.href = event.target.value;
+                   });
                 </div>
                 <span class="desktop27-text10"><span>Cart</span></span>
                 <span class="desktop27-text12"><span>Home</span></span>
