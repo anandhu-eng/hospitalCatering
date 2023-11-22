@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\PatientDetail;
+use App\Models\CurrentPatient;
 
 class profileController extends Controller
 {
@@ -11,6 +12,7 @@ class profileController extends Controller
         // get the pid from url
         $pid = $request->input('pid');
         $patientDetails = PatientDetail::where('PID', $pid)->first();
-        return response()->json($patientDetails);
+        $wardNo = currentPatient::where('PID', $pid)->first();
+        return view('patientProfile', ['patientDetails' => $patientDetails, 'wardDetails' => $wardNo]);
     }
 }
