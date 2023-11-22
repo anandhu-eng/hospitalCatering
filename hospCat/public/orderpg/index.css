@@ -314,6 +314,9 @@
   height: 1px;
   position: absolute;
 }
+.but{
+  cursor: pointer;
+}
 .desktop35-group65 {
   top: 180px;
   left: 0px;

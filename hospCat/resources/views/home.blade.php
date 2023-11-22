@@ -369,7 +369,7 @@
                    document.getElementById('profile').addEventListener('change', function(event) {
                    window.location.href = event.target.value;
                    });
-                  </script>
+                  </script>  
                 </div>
                 <form method="get" action="/cart">
                 <button type="submit" class="desktop27-text10">Cart</button></form>

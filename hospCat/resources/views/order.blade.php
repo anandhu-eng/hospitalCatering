@@ -181,57 +181,18 @@
               <button type="submit" class="desktop35-text12">Home</button></form> 
 
             </div>
-         </div>
+          </div>
           <div class="desktop35-group96">
            
             <span class="desktop35-text14"><span>My Orders</span></span>
             <div class="desktop35-group64">
-              <span class="desktop35-text16">
-                <span>Yet to be Delivered</span>
-              </span>
               <span class="desktop35-text18">
-                <span>Order ID - 147852</span>
-              </span>
-            </div>
-            <div class="desktop35-group65">
-              <span class="desktop35-text20">
-                <span>Delivered on Nov 10</span>
-              </span>
-              <span class="desktop35-text22">
-                <span>Order ID - 147852</span>
-              </span>
-            
-            </div>
-            <div class="desktop35-group66">
-              <span class="desktop35-text24">
-                <span>Delivered on Nov 10</span>
-              </span>
-              <span class="desktop35-text26">
-                <span>Order ID - 147852</span>
-              </span>
-            </div>
-            <div class="desktop35-group67">
-              <span class="desktop35-text28"><span>Refunded</span></span>
-              <span class="desktop35-text30">
-                <span>Order ID - 147852</span>
-              </span>
-              
-            </div>
-            <div class="desktop35-group68">
-              <span class="desktop35-text32">
-                <span>Delivered on Nov 10</span>
-              </span>
-              <span class="desktop35-text34">
-                <span>Order ID - 147852</span>
-              </span>
-          
-            </div>
-            <div class="desktop35-group69">
-              <span class="desktop35-text36">
-                <span>Delivered on Nov 10</span>
-              </span>
-              <span class="desktop35-text38">
-                <span>Order ID - 147852</span>
+                <button class="but" onclick="ordered()">Order ID - 147852</button>
+                <script>
+                  function ordered() {
+                    alert('Ordered Details');
+                  }
+                </script>
               </span>
             </div>
           </div>
