@@ -34,6 +34,9 @@ Route::post('/verify', function () {
 Route::get('/cart', function () {
     return view('cart');
 });
+Route::get('/order', function () {
+    return view('order');
+})->name('order');
 
 Route::get('/patientProfile', function () {
     return view('patientProfile');
