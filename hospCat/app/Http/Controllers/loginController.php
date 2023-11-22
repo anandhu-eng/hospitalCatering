@@ -31,7 +31,8 @@ class loginController extends Controller
             }
         }
         //send otp to the user if approved
-        return $phoneNumber;
+        return redirect()->route('login')
+        ->with('message', 'User with the mobine number is not currently admitted to hospital!');
         
     }
 }

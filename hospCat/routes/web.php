@@ -35,11 +35,6 @@ Route::get('/cart', function () {
     return view('cart');
 });
 
-Route::get('/patientProfile', function () {
-    return view('patientProfile');
-})->name('profile');
-
-
 // To check whether the number exist in the database
 Route::post('/loginPhCheck', [loginController::class, 'checkNo']);
 
