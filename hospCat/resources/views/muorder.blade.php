@@ -191,7 +191,7 @@
   <body>
     <link rel="stylesheet" href="./style.css" />
     <div>
-      <link href="<?php echo asset('cartpg/cart.css')?>" rel="stylesheet" />
+      <link href="<?php echo asset('orderpg/cart.css')?>" rel="stylesheet" />
 
       <div class="desktop30-container">
         <div class="desktop30-desktop30">
@@ -213,10 +213,10 @@
                     />
                   </div>
                 </div>
-                <select id="profiledp" name="profiledp" class="desktop30-text02" onchange="handleProfileChange(this)" >
-                    <option value=" ">User</option>
-                    <option value="{{ route('profile') }}">Profile</option>
+                <select id="profiledp" name="profiledp" class="desktop30-text02" onchange="handleProfileChange(this)">
                     <option value="{{ route('order') }}">My Orders</option>
+                    <option value="{{ route('profile') }}">Profile</option>
+                    
                     <option value="{{ route('login') }}">Logout</option>
                   </select>
                   <script>
@@ -228,7 +228,7 @@
               <form method="get" action="/cart">
               <button type="submit" class="desktop30-text04">Cart</button></form>
               <form method="get" action="/home">
-              <button type="submit" class="desktop30-text06">Home</button></form> 
+              <button type="submit" class="desktop30-text06">Home</button></form>
             </div>
         </div>
         <div class="desktop30-group7">
@@ -240,54 +240,48 @@
               <span>Privacy Policy | Terms and Condition</span>
             </span>
         </div>
+        @foreach ($allOrders as $index => $order)
+        <div class="loop">
+          <div class="desktop30-groupp">
+              <span class="desktop30-text14"><span>Order-ID:{{$order->OrderNo}}</span></span>
+              @if($order->DeliveryStatus =='1')  
+              <span class="delivery"><span>Not yet delivered</span></span>
+              @elseif($order->DeliveryStatus =='2')
+              <span class="delivery"><span>delivered</span></span>
+              @endif
+              <span class="desktop30-text23"><span>{{$order->FName}}</span></span>
+              <span class="desktop30-text25"><span>Rs.{{$order->Price}}</span></span>
+          </div>
+          
+          
+        </div>
+        @endforeach
+            <!-- <div class="desktop30-group38">
+                <span class="desktop30-text39"><span>Ceasar Salad</span></span>
+                <label class="box1" >
+                    <button onclick="decrement2()">-</button>
+                    <input type="number" id="quantity2" value="1" min="0">
+                    <button onclick="increment2()">+</button>
+                </label>
 
-        <div class="desktop30-group87">
-            <span class="desktop30-text14"><span>Your Order</span></span>
-            <span class="desktop30-text16">
-              <span>
-                <input type="text" id="myText" name="myText" style="width: 400px; height: 80px; ">
-              </span>
-            </span>
-            @php
-                   $totalAmt=0
-            @endphp
-            @foreach ($order_details as $order_detail)
-            @php
-                   $price=$order_detail->Price*$order_detail->Quantity;
-                   $totalAmt=$totalAmt+$price;
-            @endphp
-            <div class="desktop30-group37">
-              <span class="desktop30-text23"><span>{{$order_detail->FName}}</span></span>
-              <label class="box2"  >
-               <span class="number"><span>{{$order_detail->Quantity}}</span></span>
-             </label>
-             <span class="desktop30-text25"><span>Rs.{{$price}}</span></span>
-            </div>
-            <br><br>
-            @endforeach
-            @php
-                   $gst=$totalAmt*0.15;
-                   $totplgst=$totalAmt+$gst;
-            @endphp
-            <div class="desktop30-group39">
-              <span class="desktop30-text27"><span>Bill</span></span>
-              <span class="desktop30-text29"><span>Rs.{{$totalAmt}}</span></span>
-            </div>
-            <div class="desktop30-group40">
-              <span class="desktop30-text31">
-                <span>GST and Other Charges</span>
-              </span>
-              <span class="desktop30-text33"><span>Rs.{{$gst}}</span></span>
-            </div>
-            <div class="desktop30-group41">
-              <span class="desktop30-text35"><span>Total</span></span>
-              <span class="desktop30-text37"><span>Rs.{{$totplgst}}</span></span>
-            </div>
-            <br>
-            <form method="GET" action="/placeOrder" id="myForm">
-              <input class="proceed" type="Submit" value="Proceed">
-            </form>
-            
+                <script>
+                  // JavaScript functions for increment and decrement
+                  function increment2() {
+                   var input = document.getElementById('quantity2');
+                   input.value = parseInt(input.value, 10) + 1;
+                  }
+
+                  function decrement2() {
+                   var input = document.getElementById('quantity2');
+                   var value = parseInt(input.value, 10);
+                   if (value > 0) {
+                     input.value = value - 1;
+                   }
+                  }
+                </script>-->
+
+            <!--<input type="Submit" value="Proceed">-->
+
         </div>
       </div>
     </div>

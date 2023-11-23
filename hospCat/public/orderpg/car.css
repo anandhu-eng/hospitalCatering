@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'Jim Nightshade-Regular';
+    src: url('./fonts/Jim_Nightshade/JimNightshade-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Poppins-Regular';
+    src: url('./fonts/Poppins/Poppins-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Poppins-Bold';
+    src: url('./fonts/Poppins/Poppins-Bold.ttf');
+    font-weight: 400;
+    font-style: normal;
+  }
+.header{
+    top: 12px;
+    position: absolute;
+    display: flex;
+}
+
+.logo{
+    font-family: "Jim Nightshade-Regular";
+    color:rgba(17, 22, 150, 1);
+    font-size: 45px;
+    margin-left:7px;
+}
+.home{
+    background-color: white;
+    margin-top: 16px;
+    margin-left:1020px;
+    border: none;
+    font-family: "Poppins-Regular";
+    font-size: 20px;
+    cursor: pointer;
+}
+.cart{
+    background-color: white;
+    margin-top: 16px;
+    margin-left:35px;
+    border: none;
+    font-family: "Poppins-Regular";
+    font-size: 20px;
+    cursor: pointer;
+}
+.dropdown{
+    background-color: white;
+    margin-left:35px;
+    border: none;
+    font-family: "Poppins-Regular";
+    font-size: 20px;
+    cursor: pointer;
+}
+.orderdetails {
+    margin-top: 150px;
+    margin-left: 400px;
+    margin-right: 400px;
+    font-size: 18px;
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px; /* Adjust as needed for spacing between orders */
+}
+
+.one {
+    display: flex;
+    justify-content: space-between;
+}
+
+.orderno {
+    font-family: "Poppins-bold";
+}
+
+.delivery {
+    font-family: "Poppins-Regular";
+}
+
+.delivery1 {
+    color: green;
+}
+
+.delivery2 {
+    color: red;
+}
+
+.two {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.foodname {
+    font-family: "Poppins-Regular";
+    margin-right: 450px; /* Adjust as needed for spacing between Food Name and Price */
+}
+
+.price {
+    margin-left: 50px;
+    font-family: "Poppins-Regular";
+}
+.desktop30-group7 {
+    top: 700px;
+    left: 0px;
+    width: 100%;
+    height: 273px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    background-color: rgba(17, 22, 150, 0.8500000238418579);
+}
+.desktop30-text08 {
+    top: 20%;
+    left: 675px;
+    color: rgba(255, 255, 255, 1);
+    width: 100%;
+    height: auto;
+    position: absolute;
+    font-size: 55px;
+    text-align: left;
+    font-family: "Jim Nightshade-Regular";
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}
+.desktop30-text10 {
+    top: 128px;
+    left: 620px;
+    color: rgba(207, 204, 204, 1);
+    height: auto;
+    position: absolute;
+    font-size: 23px;
+    text-align: left;
+    font-family: "Poppins-Regular";
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+.desktop30-text12 {
+    top: 170px;
+    left: 550px;
+    color: rgba(207, 204, 204, 1);
+    height: auto;
+    position: absolute;
+    font-size: 23px;
+    text-align: left;
+    font-family: "Poppins-Regular";
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }

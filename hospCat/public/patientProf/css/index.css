@@ -32,6 +32,7 @@
   color: rgba(0, 0, 0, 1);
   height: auto;
   position: absolute;
+  cursor: pointer;
   font-size: 20px;
   font-style: Regular;
   text-align: left;
@@ -190,6 +191,39 @@
   height: 26px;
   position: absolute;
 }
+
+.desktop27-text10 {
+  top: 6px;
+  left: 150px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  cursor: pointer;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.desktop27-text12 {
+  top: 6px;
+  left: 50px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  text-align: left;
+  font-family: "Poppins-Semibold";
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .desktop34-text08 {
   top: 6px;
   left: 44px;

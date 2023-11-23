@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Order;
+use App\Models\orders;
+use App\Models\Foods;
 
 class orderController extends Controller
 {
@@ -11,7 +12,11 @@ class orderController extends Controller
         // get the pid from session
         $pid=$request->session()->get('user');
         // get  the order details from the orders table
-        $allOrders=Order::where('PID', $pid)->get();
+        $allOrders=orders::where('PID', $pid)
+        ->join('Foods', 'orders.FID', '=', 'Foods.FID')
+        ->select('orders.*', 'Foods.*')
+        ->get();
+        // return response()->json($allOrders);
         return view('order', ['allOrders' => $allOrders]);
     }
 }

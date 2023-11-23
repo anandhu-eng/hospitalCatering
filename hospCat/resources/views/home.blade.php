@@ -2,9 +2,10 @@
 <html lang="english">
   <head>
     <title>Home</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=1000px, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <style data-tag="reset-style-sheet">
       html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
@@ -364,7 +365,7 @@
                   <select id="profiledp" name="profiledp" class="desktop27-text08" onchange="handleProfileChange(this)">
                     <option value="">User</option>
                     <option value="{{ route('profile') }}">Profile</option>
-                    <option value="{{ route('cart') }}">My Orders</option>
+                    <option value="{{ route('order') }}">My Orders</option>
                     <option value="{{ route('logOut') }}">Logout</option>
                   </select>
                   <script>
@@ -378,7 +379,7 @@
                   // Add an event listener to the button
                   document.getElementById('cart').addEventListener('click', function() {
                     // Change the URL to the desired route
-                    window.location.href = "{{ route('cart') }}"; // Replace '/your-route' with the actual route
+                    window.location.href = "{{ route('viewCart') }}"; // Replace '/your-route' with the actual route
                   });
                 </script>
                 <button id="home" class="desktop27-text12">Home</button></form> 
@@ -406,30 +407,24 @@
            @foreach ($food_records as $index => $food)
             
             <div class="desktop27-group17">
-              <img
+              <!--<img
                 src="<?php echo asset('homepg/external/')?>/vector1559-slvw.svg"
                 alt="Vector1559"
                 class="desktop27-vector04"
-              />
+              />-->
               <img
-                src="<?php echo asset('homepg/images/')?>/food.png"
+                src="<?php echo asset('foodImages/')?>/{{$food->FName}}.png"
                 alt="food pic"
                 class="desktop27-anhnguyenkc-ac3f3f-eunsplashremovebgpreview1"
               />
               <span class="desktop27-text18"><span>{{$food->FName}}</span></span>
-              <button class="addtocart" onclick="addtocart()">+</button>
+              <button class="addtocart" onclick="addtocart({{$food->FID}})">+</button>
               <br>
-              <script>
-                function addtocart() {
-                 alert('Added to the cart!'); 
-                }
-
-              </script>
               <span class="desktop27-text20"><span>{{$food->Price}}</span></span>
               
             </div>
            @endforeach
-           
+              
           </div>
           <script>
             function search() {
@@ -448,6 +443,34 @@
             } else {
               alert("Food container not found");
             }
+            }
+            function addtocart(FID) {
+                  // Make a POST request to the Laravel route
+                fetch('/addCart', {
+                  method: 'POST',
+                  headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content,
+                  },
+                  body: JSON.stringify({
+                    fid: parseInt(FID),
+                  }),
+                }).then(response => {
+                  if (response.ok) {
+                    // Request was successful, show an alert
+                    
+                    alert('Added food ' + FID + ' to the cart!');
+                  } else {
+                    // Request failed, handle the error
+                    alert('Failed to add to cart. Please try again.');
+                    return response.text();
+                  }
+                })
+                .catch(error => {
+                  // Handle network or other errors
+                  alert('An error occurred. Please try again.');
+                  console.error('Error:', error);
+                });
             }
           </script>
 

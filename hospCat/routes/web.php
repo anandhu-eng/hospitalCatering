@@ -5,6 +5,7 @@ use App\Http\Controllers\loginController;
 use App\Http\Controllers\viewCartController;
 use App\Http\Controllers\profileController;
 use App\Http\Controllers\orderController;
+use App\Http\Controllers\addCartController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -46,7 +47,10 @@ Route::post('/loginPhCheck', [loginController::class, 'checkNo']);
 Route::post('/addCart',[addCartController::class, 'cartJsonRequest']);
 
 // Route to view the cart details
-Route::get('/viewCart',[viewCartController::class, 'viewCart']);
+Route::get('/viewCart',[viewCartController::class, 'viewCart'])->name('viewCart');
+
+// Route to officialy place the order from the cart
+Route::get('/placeOrder',[viewCartController::class, 'placeOrder'])->name('placeOrder');
 
 //Route for the user to log out
 Route::get('/logOut',[loginController::class, 'logOut'])->name('logOut');

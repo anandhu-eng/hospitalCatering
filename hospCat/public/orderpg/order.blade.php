@@ -191,7 +191,7 @@
   <body>
     <link rel="stylesheet" href="./style.css" />
     <div>
-      <link href="<?php echo asset('cartpg/cart.css')?>" rel="stylesheet" />
+      <link href="<?php echo asset('orderpg/cart.css')?>" rel="stylesheet" />
 
       <div class="desktop30-container">
         <div class="desktop30-desktop30">
@@ -213,14 +213,13 @@
                     />
                   </div>
                 </div>
-                <select id="profiledp" name="profiledp" class="desktop30-text02" onchange="handleProfileChange(this)" >
-                    <option value=" ">User</option>
+                <select id="profile" name="profile" class="desktop30-text02" >
                     <option value="{{ route('profile') }}">Profile</option>
                     <option value="{{ route('order') }}">My Orders</option>
                     <option value="{{ route('login') }}">Logout</option>
                   </select>
                   <script>
-                   document.getElementById('profiledp').addEventListener('change', function(event) {
+                   document.getElementById('profile').addEventListener('change', function(event) {
                    window.location.href = event.target.value;
                    });
                    </script>
@@ -228,7 +227,7 @@
               <form method="get" action="/cart">
               <button type="submit" class="desktop30-text04">Cart</button></form>
               <form method="get" action="/home">
-              <button type="submit" class="desktop30-text06">Home</button></form> 
+              <button type="submit" class="desktop30-text06">Home</button></form>
             </div>
         </div>
         <div class="desktop30-group7">
@@ -241,53 +240,85 @@
             </span>
         </div>
 
+        <div class="desktop30-groupp">
+            <span class="desktop30-text14"><span>Order-ID:25689</span></span>
+            <span class="delivery"><span>Not yet delivered</span></span>
+        </div>
         <div class="desktop30-group87">
-            <span class="desktop30-text14"><span>Your Order</span></span>
             <span class="desktop30-text16">
               <span>
                 <input type="text" id="myText" name="myText" style="width: 400px; height: 80px; ">
               </span>
             </span>
-            @php
-                   $totalAmt=0
-            @endphp
-            @foreach ($order_details as $order_detail)
-            @php
-                   $price=$order_detail->Price*$order_detail->Quantity;
-                   $totalAmt=$totalAmt+$price;
-            @endphp
             <div class="desktop30-group37">
-              <span class="desktop30-text23"><span>{{$order_detail->FName}}</span></span>
-              <label class="box2"  >
-               <span class="number"><span>{{$order_detail->Quantity}}</span></span>
+              <span class="desktop30-text23"><span>Ceasar Salad</span></span>
+              <!--<label class="box2"  >
+               <button onclick="decrement1()">-</button>
+               <input type="number" id="quantity1" value="1" min="0">
+               <button onclick="increment1()">+</button>
              </label>
-             <span class="desktop30-text25"><span>Rs.{{$price}}</span></span>
+
+             <script>
+              // JavaScript functions for increment and decrement
+              function increment1() {
+               var input = document.getElementById('quantity1');
+               input.value = parseInt(input.value, 10) + 1;
+              }
+
+              function decrement1() {
+               var input = document.getElementById('quantity1');
+               var value = parseInt(input.value, 10);
+               if (value > 0) {
+                input.value = value - 1;
+               }
+              }
+             </script>-->
+             <span class="desktop30-text25"><span>Rs.60</span></span>
             </div>
-            <br><br>
-            @endforeach
-            @php
-                   $gst=$totalAmt*0.15;
-                   $totplgst=$totalAmt+$gst;
-            @endphp
+            <div class="desktop30-group38">
+                <span class="desktop30-text39"><span>Ceasar Salad</span></span>
+                <!--<label class="box1" >
+                    <button onclick="decrement2()">-</button>
+                    <input type="number" id="quantity2" value="1" min="0">
+                    <button onclick="increment2()">+</button>
+                </label>
+
+                <script>
+                  // JavaScript functions for increment and decrement
+                  function increment2() {
+                   var input = document.getElementById('quantity2');
+                   input.value = parseInt(input.value, 10) + 1;
+                  }
+
+                  function decrement2() {
+                   var input = document.getElementById('quantity2');
+                   var value = parseInt(input.value, 10);
+                   if (value > 0) {
+                     input.value = value - 1;
+                   }
+                  }
+                </script>-->
+                <span class="desktop30-text41"><span>Rs.60</span></span>
+              </div>
             <div class="desktop30-group39">
+                <hr>
               <span class="desktop30-text27"><span>Bill</span></span>
-              <span class="desktop30-text29"><span>Rs.{{$totalAmt}}</span></span>
+              <span class="desktop30-text29"><span>Rs.120</span></span>
             </div>
             <div class="desktop30-group40">
               <span class="desktop30-text31">
                 <span>GST and Other Charges</span>
               </span>
-              <span class="desktop30-text33"><span>Rs.{{$gst}}</span></span>
+              <span class="desktop30-text33"><span>Rs.20</span></span>
             </div>
             <div class="desktop30-group41">
               <span class="desktop30-text35"><span>Total</span></span>
-              <span class="desktop30-text37"><span>Rs.{{$totplgst}}</span></span>
+              <span class="desktop30-text37"><span>Rs.140</span></span>
             </div>
+
             <br>
-            <form method="GET" action="/placeOrder" id="myForm">
-              <input class="proceed" type="Submit" value="Proceed">
-            </form>
-            
+            <!--<input type="Submit" value="Proceed">-->
+
         </div>
       </div>
     </div>

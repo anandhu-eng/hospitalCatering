@@ -17,9 +17,19 @@
     font-weight: 400;
     font-style: normal;
   }
+
+.heading{
+    left:20px;
+    top:25px;
+    font-family: "Poppins-Regular";
+    font-size: 25px;
+
+}
 .desktop30-container {
   align-items: center;
+  max-width:100% !important;
 }
+
 .desktop30-desktop30 {
     top: 12px;
     left: 24px;
@@ -48,7 +58,7 @@
 }
 .desktop30-group80 {
     top: 13px;
-    left: 1073px;
+    left: 1000px;
     width: 304.18048095703125px;
     height: 39px;
     display: flex;
@@ -66,19 +76,10 @@
   align-items: flex-start;
   flex-shrink: 1;
 }
-.desktop30-group14 {
-  top: 12px;
-  left: 200px;
-  width: 105px;
-  height: 39px;
-  display: flex;
-  position: absolute;
-  align-items: flex-start;
-  flex-shrink: 1;
-}
+
 .desktop30-iconamoonprofilecircle {
   top: 0px;
-  left: 35px;
+  left: 40px;
   width: 39px;
   height: 39px;
   display: flex;
@@ -119,30 +120,30 @@
   position: absolute;
   font-size: 20px;
   font-style: Regular;
-  cursor: pointer;
-  text-align: left;
+  text-align: center;
   font-family: Poppins;
   font-weight: 400;
+  cursor: pointer;
   line-height: normal;
   font-stretch: normal;
   text-decoration: none;
 }
 .desktop30-text04 {
   margin-top: 0px;
-  left: 150px;
+  left: 170px;
   color: rgba(0, 0, 0, 1);
   height: auto;
   position: absolute;
   font-size: 20px;
   text-align: left;
-  font-family: "Poppins-bold";
+  font-family: "Poppins-Regular";
   font-weight: 400;
   line-height: normal;
   font-stretch: normal;
   text-decoration: none;
 }
 .desktop30-text06 {
-  left:50px;
+  left:70px;
   color: rgba(0, 0, 0, 1);
   height: auto;
   position: absolute;
@@ -163,7 +164,7 @@
   position: absolute;
 }
 .desktop30-group7 {
-  top: 700px;
+  top: 720px;
   left: 0px;
   width: 100%;
   height: 273px;
@@ -219,15 +220,52 @@
   font-stretch: normal;
   text-decoration: none;
 }
-.desktop30-group87 {
-  top: 75px;
-  left: 125px;
-  width: 500px;
+.loop{
+  margin-top: 100px;;
+  display: flex;
+  padding:20px;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.desktop30-groupp {
+  width: 100%;
   height: 583px;
-  position: absolute;
-  align-items: flex-start;
   flex-shrink: 1;
 }
+.desktop30-group14 {
+    width: 100%;
+    height: 39px;
+    display: flex;
+    position: absolute;
+    font-family: "Poppins-bold";
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  .desktop30-text14 {
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    font-size: 21px;
+    text-align: left;
+    font-family: "Poppins-Bold";
+    font-weight: 500;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+.delivery {
+      width: 100%;
+      height: 39px;
+      display: flex;
+      margin-left: 200px;
+      flex-shrink: 1;
+}
+.desktop30-group87 {
+    width: 100%;
+    height: 583px;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
 .desktop30-line2 {
   top: 0px;
   left: 781px;
@@ -235,26 +273,10 @@
   height: 1px;
   position: absolute;
 }
-.desktop30-text14 {
-  top: 10px;
-  left: 350px;
-  color: rgba(0, 0, 0, 1);
-  height: auto;
-  position: absolute;
-  font-size: 21px;
-  text-align: left;
-  font-family: "Poppins-Bold";
-  font-weight: 500;
-  line-height: normal;
-  font-stretch: normal;
-  text-decoration: none;
-}
+
 .desktop30-text16 {
-  top: 105px;
-  left: 37px;
   color: rgba(0, 0, 0, 1);
   height: auto;
-  position: absolute;
   font-size: 17px;
   font-style: Light;
   text-align: left;
@@ -269,15 +291,12 @@
   width: 100%;
   height: 29px;
   display: flex;
-  position: relative;
   align-items: flex-start;
   flex-shrink: 1;
 }
 .desktop30-text23 {
   color: rgba(0, 0, 0, 1);
   height: auto;
-  top: 85px;
-  position: absolute;
   font-size: 19px;
   font-style: Regular;
   text-align: left;
@@ -286,21 +305,11 @@
   line-height: normal;
   font-stretch: normal;
   text-decoration: none;
-}
-
-.box2{
-  margin-top: 90px;
-  margin-left: 225px;
-  font-family: "Poppins-Regular";
-  font-size: 20px;
-  color:black;
 }
 .desktop30-text25 {
-  left: 368px;
-  top: 85px;
+  margin-left:50px ;
   color: rgba(0, 0, 0, 1);
   height: auto;
-  position: absolute;
   font-size: 19px;
   font-style: Regular;
   text-align: left;
@@ -310,6 +319,11 @@
   font-stretch: normal;
   text-decoration: none;
 }
+.box2{
+  margin-top: 75px;
+  margin-left: 181px;
+}
+
 .desktop30-group39 {
   top: 350px;
   left: 350px;

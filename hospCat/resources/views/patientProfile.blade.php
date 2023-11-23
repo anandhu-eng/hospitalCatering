@@ -256,21 +256,33 @@
                     />
                   </div>
                 </div>
-                <select id="profile" name="profile" class="desktop30-text02" >
+                <select id="profiledp" name="profiledp" class="desktop30-text02" onchange="handleProfileChange(this)">
                   <option value="{{ route('profile') }}">Profile</option>
-                  <option value="{{ route('login') }}">My Orders</option>
+                  <option value="{{ route('order') }}">My Orders</option>
                   <option value="{{ route('login') }}">Logout</option>
                 </select>
                 <script>
-                  document.getElementById('profile').addEventListener('change', function(event) {
-                  window.location.href = event.target.value;
-                  });
+                   document.getElementById('profiledp').addEventListener('change', function(event) {
+                   window.location.href = event.target.value;
+                   });
                 </script>
               </div>
-              <form method="get" action="/cart">
-                <button type="submit" class="desktop34-text10">Cart</button></form>
-                <form method="get" action="/home">
-                <button type="submit" class="desktop34-text12">Home</button></form>
+              <button id="cart" class="desktop27-text10">Cart</button></form>
+                <script>
+                  // Add an event listener to the button
+                  document.getElementById('cart').addEventListener('click', function() {
+                    // Change the URL to the desired route
+                    window.location.href = "{{ route('viewCart') }}"; // Replace '/your-route' with the actual route
+                  });
+                </script>
+                <button id="home" class="desktop27-text12">Home</button></form> 
+                <script>
+                  // Add an event listener to the button
+                  document.getElementById('home').addEventListener('click', function() {
+                    // Change the URL to the desired route
+                    window.location.href = "{{ route('home') }}"; // Replace '/your-route' with the actual route
+                  });
+                </script>
             </div>
           </div>
           
