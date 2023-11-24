@@ -225,7 +225,7 @@
                    });
                    </script>
               </div>
-              <form method="get" action="/cart">
+              <form method="get" action="/viewCart">
               <button type="submit" class="desktop30-text04">Cart</button></form>
               <form method="get" action="/home">
               <button type="submit" class="desktop30-text06">Home</button></form> 

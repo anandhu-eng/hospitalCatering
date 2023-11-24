@@ -14,7 +14,7 @@
             <form method="get" action="/home">
                 <button type="submit" class="home">Home</button>
             </form>
-            <form method="get" action="/cart">
+            <form method="get" action="/viewCart">
                 <button type="submit" class="cart">Cart</button>
             </form>
             <select id="profiledp" name="profiledp" class="dropdown" onchange="handleProfileChange(this)">
@@ -29,6 +29,7 @@
             </script>
         </div>
         <div class="orderdetails">
+        @if(count($allOrders) > 0)
         @foreach ($allOrders as $index => $order)
             <div class="order">
                 <div class="one">
@@ -45,6 +46,9 @@
                 </div>
             </div>
         @endforeach
+        @else
+        <span class="orderno">No orders yet!</span>
+        @endif
     </div>
     <div class="desktop30-group7">
         <span class="desktop30-text08"><span>Medimenu</span></span>

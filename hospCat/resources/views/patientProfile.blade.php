@@ -267,22 +267,10 @@
                    });
                 </script>
               </div>
-              <button id="cart" class="desktop27-text10">Cart</button></form>
-                <script>
-                  // Add an event listener to the button
-                  document.getElementById('cart').addEventListener('click', function() {
-                    // Change the URL to the desired route
-                    window.location.href = "{{ route('viewCart') }}"; // Replace '/your-route' with the actual route
-                  });
-                </script>
-                <button id="home" class="desktop27-text12">Home</button></form> 
-                <script>
-                  // Add an event listener to the button
-                  document.getElementById('home').addEventListener('click', function() {
-                    // Change the URL to the desired route
-                    window.location.href = "{{ route('home') }}"; // Replace '/your-route' with the actual route
-                  });
-                </script>
+              <form method="get" action="/viewCart">
+              <button type="submit" class="desktop30-text04">Cart</button></form>
+              <form method="get" action="/home">
+              <button type="submit" class="desktop30-text06">Home</button></form> 
             </div>
           </div>
           

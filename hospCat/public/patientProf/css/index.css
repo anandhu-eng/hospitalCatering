@@ -192,6 +192,36 @@
   position: absolute;
 }
 
+.desktop30-text04 {
+  margin-top: 0px;
+  left: 150px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  text-align: left;
+  font-family: "Poppins";
+  font-style: Regular ;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.desktop30-text06 {
+  left:50px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
 .desktop27-text10 {
   top: 6px;
   left: 150px;
