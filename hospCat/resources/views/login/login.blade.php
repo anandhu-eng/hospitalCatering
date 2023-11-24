@@ -174,7 +174,7 @@
             </div>
             <span class="desktop1-text04">
               <span>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              Seamless Hospital Catering System
               </span>
             </span>
           </div>

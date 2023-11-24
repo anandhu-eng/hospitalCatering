@@ -37,12 +37,12 @@
                     @if($order->DeliveryStatus =='1') 
                         <span class="delivery delivery1">Not yet delivered</span>
                     @elseif($order->DeliveryStatus =='2')
-                        <span class="delivery delivery2">Delivered</span>
+                        <span class="delivery delivery2">Food Delivered</span>
                     @endif
                 </div>
                 <div class="two">
                     <span class="foodname">{{$order->FName}}</span>
-                    <span class="price">Rs.{{$order->Price}}</span>
+                    <span class="price">Rs.{{$order->Price*$order->Quantity}}</span>
                 </div>
             </div>
         @endforeach
