@@ -39,7 +39,7 @@ class loginController extends Controller
         }
         else{
         return redirect()->route('login')
-        ->with('message', 'User with the mobine number is not currently admitted to hospital!');
+        ->with('message', 'User with the mobile number is not currently admitted to hospital!');
         }
     }
     //for the home page
